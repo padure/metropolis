@@ -23,8 +23,8 @@
 
 <body>
     <!--Wrapper-->
+    <header class="empty-row py-3"></header>
     <div class="wrapper vh-100 d-flex justify-content-between align-items-center ">
-
         <!--Navbar-->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3 my-navbar">
             <div class="container">
@@ -105,7 +105,7 @@
 
     <!--Best foody products (about us reference)-->
     <div class="container first-section my-5 py-4">
-        <div class="text-section my-5 mx-0">
+        <div class="text-section ms-5">
             <h1 class="my-2"><span>Noi</span> te servim cu cele mai gustoase preparate</h1>
             <p class="my-4">
                 Cu o experință de mai bine de 7 ani, <b>Metropolis</b> și-a câștigat încrederea față de oaspeții noștri.
@@ -129,8 +129,8 @@
                     type="submit"><b>Despre noi</b></button></div>
         </div>
         <!--gallery-->
-        <div class="m-4 me-2">
-            <img class="img-the-best-food" src="Images/index/gallery1.png" height="320px">
+        <div class="m-4">
+            <img class="img-the-best-food" src="Images/index/gallery1.png">
             <div class="d-flex my-3 images-food">
                 <img src="Images/index/gallery2.png">
                 <img src="Images/index/gallery3.png">
@@ -145,23 +145,23 @@
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.9);">
             <div class="container">
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 my-5">
-                    <div class="col align-items-start my-5">
-                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-car-side"></i>
+                    <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
+                        <i class="py-3 my-1 fa fa-car-side"></i>
                         <h4 class="fw-bold mb-0">Livrare</h4>
-                        <p>Disponibil în raza orașului <br>Orar 10:00-22:00</p>
+                        <p>Disponibil în raza orașului. Orar 10:00-22:00</p>
                     </div>
-                    <div class="col align-items-start my-5">
-                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-utensils"></i>
+                    <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
+                        <i class="py-3 my-1 fa fa-utensils"></i>
                         <h4 class="fw-bold mb-0">Calitate</h4>
-                        <p>Pentru noi, confortul și siguranța <br>sunt pe primul loc.</p>
+                        <p>Pentru noi, confortul și siguranța sunt pe primul loc.</p>
                     </div>
-                    <div class="col align-items-start my-5">
-                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-pizza-slice"></i>
+                    <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
+                        <i class="py-3 my-1 fa fa-pizza-slice"></i>
                         <h4 class="fw-bold mb-0">Meniu variat</h4>
                         <p>Preparate pentru toate gusturile.</p>
                     </div>
-                    <div class="col align-items-start my-5">
-                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-birthday-cake"></i>
+                    <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
+                        <i class="py-3 my-1 fa fa-birthday-cake"></i>
                         <h4 class="fw-bold mb-0">Momente unice</h4>
                         <p>Rezervă pentru momentele importante din viața ta</p>
                     </div>
@@ -432,11 +432,11 @@
                         <div class="row my-3">
 
                             <!--Review item-->
-                            <div id="first-review" class="col">
+                            <div id="first-review" class="col-md-4 review">
                                 <div class="py-4 bg-dark text-white text-center">
                                     <img class="rounded-circle" width="100px" height="100px"
                                         src="Images/index/woman-user.png">
-                                    <div class="my-3 mx-0" style="font-size: 20px;">Катана Ульяна Викторовна</div>
+                                    <div class="my-3 mx-0" style="font-size: 18px;">Катана Ульяна Викторовна</div>
                                     <div class="mb-3" style="color: #fd9d0b;">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -445,7 +445,7 @@
                                         <i class="far fa-star"></i>
                                     </div>
                                     <p class="mx-3">
-                                        Salate sănătoase / Great cocktails<br>
+                                        Salate sănătoase / Great cocktails.
                                         Servire excelentă, atmosfera placută si relaxantă, muzică live, mâncare gustoasă
                                         și la preț ieftin.
                                     </p>
@@ -453,11 +453,11 @@
                             </div>
 
                             <!--Review item-->
-                            <div id="second-review" class="col">
+                            <div id="second-review" class="col-md-4 review">
                                 <div class="py-4 bg-dark text-white text-center">
                                     <img class="rounded-circle" width="100px" height="100px"
                                         src="Images/index/man-user.png">
-                                    <div class="my-3 mx-0" style="font-size: 20px;">Zgherea Marius-Marcel</div>
+                                    <div class="my-3 mx-0" style="font-size: 18px;">Zgherea Marius-Marcel</div>
                                     <div class="mb-3" style="color: #fd9d0b;">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -474,11 +474,11 @@
                             </div>
 
                             <!--Review item-->
-                            <div id="third-review" class="col">
+                            <div id="third-review" class="col-md-4 review">
                                 <div class="py-4 bg-dark text-white text-center">
                                     <img class="rounded-circle" width="100px" height="100px"
                                         src="Images/index/woman-user.png">
-                                    <div class="my-3 mx-0" style="font-size: 20px;">Rodica Cocoș</div>
+                                    <div class="my-3 mx-0" style="font-size: 18px;">Rodica Cocoș</div>
                                     <div class="mb-3" style="color: #fd9d0b;">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -487,7 +487,7 @@
                                         <i class="far fa-star"></i>
                                     </div>
                                     <p class="mx-3">
-                                        Îmi place mult aici! Recomand tuturor celor care vor sa manânce gustos! <br>
+                                        Îmi place mult aici! Recomand tuturor celor care vor sa manânce gustos!
                                         Atmosferă romantică / Listă de vinuri bogată / Relaxare
                                     </p>
                                 </div>

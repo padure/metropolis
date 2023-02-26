@@ -16,6 +16,9 @@ body {
     background-color: #111111; 
     box-shadow: rgba(169, 169, 180, 0.2) 0px 4px 16px;
 }
+.empty-row{
+    height: 80px;
+}
 .wrapper {
     background-image: url("../Images/index/hero-bg.jpg");
     background-size: cover;
@@ -88,7 +91,17 @@ body {
 #second-photo {
     padding-top: 110px;
 }
-
+.features > i{
+    color: #fd9d0b;
+    font-size: 3rem;
+}
+.features > h4{
+    font-size: 1.2rem;
+}
+.features > p{
+    text-align: center;
+    font-size: 0.9rem;
+}
 .text-section h1 {
     font-family: 'Oleo Script', cursive;
     font-size: 58px
@@ -100,8 +113,13 @@ body {
 
 .text-section p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
+.review{
+    border-top: 1px solid #111111;    
+    border-bottom: 1px solid #111111;    
+}
+
 .text p {
     font-size: 28px;
     font-family: 'Open Sans', sans-serif;
@@ -118,13 +136,13 @@ body {
 }
 /*Small gallery index page*/
 .img-the-best-food{
-    width: 90%;
+    width: 100%;
 }
 .images-food{
-    gap: 20px;
+    gap: 4%;
 }
 .images-food > img{
-    width: calc(45% - 10px);
+    width: 48%;
 }
 .img-main-menu{
     height: 450px!important;
@@ -429,6 +447,16 @@ input:checked+label {
         border-bottom-left-radius: 16px;
         border-bottom-right-radius: 16px;
     }
+    .text-section p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+}
+@media (max-width: 576px) {
+    /* .text-section p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+    } */
 }
 
 @media screen and (max-width:900px) {
