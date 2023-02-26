@@ -11,6 +11,10 @@ body{
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.55);
 }
+.my-navbar{
+    background-color: #111111; 
+    box-shadow: rgba(169, 169, 180, 0.2) 0px 4px 16px;
+}
 .items-count {
     position: absolute;
     right: -10px;
