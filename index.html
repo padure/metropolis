@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Metropolis Cahul pune la dispoziția voastră o colecție vibrantă de preparate diverse și delicioase. Nu ezita sa vezi meniul !">
+    <meta name="keywords" content="Metropolis, Cahul, livrare, bucatarie variata, bucate calde, pizza, salate, bucate din carne, garnituri, platouri, desert, bauturi, preturi accesibile">
+    <meta name="author" content="WebFoxes Team">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a9719e28a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Wrapper-->
+    <div class="wrapper vh-100 d-flex justify-content-between align-items-center ">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3 my-navbar">
+            <div class="container">
+
+                <!--Toggle Button-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="index.html" class="navbar-brand">
+                    <img width="110px" src="logo.png">
+                </a>
+
+                <div class="collapse navbar-collapse" id="mobileNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-2"><a href="menu-modal.html" class="nav-link">Meniu</a></li>
+                    <li class="nav-item mx-2"><a href="menu-local.html" class="nav-link">Meniu în sală</a></li>
+                    <li class="nav-item mx-2"><a href="about_us.html" class="nav-link">Despre noi</a></li>
+                    <li class="nav-item mx-2"><a href="contact.html"class="nav-link">Contacte</a></li>
+                    </ul>
+                </div>
+
+                <!--Shopping cart-->
+                <div class="position-relative ms-0 ms-md-5 me-2">
+                    <a href="cart.html" class="shopping-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </a>
+                    <div id="items-count">0</div>
+                </div>
+            </div>
+        </nav>
+        <!--Navbar end-->
+
+        <!--Hero Section-->
+        <div class="container">
+            <div class="row justify-content-between w-90" style="position: relative; z-index: 10;">
+
+                <div class="col col-md-5 d-flex align-items-center">
+
+                    <!--Social Links-->
+                    <div class="d-none d-md-flex justify-content-between align-items-center flex-column">
+                        <div class="bar"></div>
+                        <!--Social Icons-->
+                        <div class="d-flex flex-column gap-2 my-4">
+                            <!--Instagram-->
+                            <a href="https://www.instagram.com/metropolis_cahul/" class="social-icon">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+
+                            <!--Facebook-->
+                            <a href="https://www.facebook.com/MetropolisCahul" class="social-icon">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </div>
+                        <div class="bar"></div>
+                    </div>
+
+                    <!--Content-->
+                    <div class="ms-5">
+                        <h1 class="hero-description"><span class="p-color">Arta</span> mancarii <br> de calitate
+                        </h1>
+                        <p style="font-family: 'Open Sans', sans-serif;">
+                            Momentele speciale se savurează cu prietenii dragi și numai cu bucate la fel de bune!
+                            <b>Metropolis Cahul</b> vă pune la dispoziție
+                            cea mai variată gamă de bucate pentru cei mai gurmanzi oaspeți.
+                        </p>
+                        <div> <button onclick="location.href = 'menu-modal.html';" class=" my-3 text-white" id="button"
+                                type="submit"><b>Vezi meniul</b></button></div>
+                    </div>
+                </div>
+                <div class="col col-md-5 d-flex justify-content-between align-items-center d-none d-md-block">
+                    <img height="700px" width="600px" src="Images/index/hero-image-item.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <!--Hero Section end-->
+    </div>
+
+    <!--Best foody products (about us reference)-->
+    <div class="container first-section my-5 py-4">
+        <div class="text-section my-5 mx-0">
+            <h1 class="my-2"><span>Noi</span> te servim cu cele mai gustoase preparate</h1>
+            <p class="my-4">
+                Cu o experință de mai bine de 7 ani, <b>Metropolis</b> și-a câștigat încrederea față de oaspeții noștri.
+                De-a lungul timpului bucătăria noastră a fost gazda mai multor evenimente și momente ale oamenilor din
+                diferite colțuri ale lumii.
+                Află mai multe despre pasiunea noastră pentru arta mâncării de calitate.
+            </p>
+            <p>
+                <i class="fa fa-check me-2"></i>
+                Bucate preparate din incrediente naturale.
+            </p>
+            <p>
+                <i class="fa fa-check me-2"></i>
+                Spații de relaxare pentru toate vârstele.
+            </p>
+            <p>
+                <i class="fa fa-check me-2"></i>
+                Cele mai rafinate gusturi pentru tine și prietenii tăi.
+            </p>
+            <div> <button onclick="location.href = 'about_us.html';" class="my-3 text-white" id="button"
+                    type="submit"><b>Despre noi</b></button></div>
+        </div>
+        <!--gallery-->
+        <div class="m-4 me-2">
+            <img class="img-the-best-food" src="Images/index/gallery1.png" height="320px">
+            <div class="d-flex my-3 images-food">
+                <img src="Images/index/gallery2.png">
+                <img src="Images/index/gallery3.png">
+            </div>
+        </div>
+        <!--gallery-->
+    </div>
+    <!--Best foody products (about us reference) end-->
+
+    <!--Features-->
+    <div class=" bg-image my-3 mx-0" style="background-image: url('Images/index/bg-features.jpg');">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.9);">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 my-5">
+                    <div class="col align-items-start my-5">
+                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-car-side"></i>
+                        <h4 class="fw-bold mb-0">Livrare</h4>
+                        <p>Disponibil în raza orașului <br>Orar 10:00-22:00</p>
+                    </div>
+                    <div class="col align-items-start my-5">
+                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-utensils"></i>
+                        <h4 class="fw-bold mb-0">Calitate</h4>
+                        <p>Pentru noi, confortul și siguranța <br>sunt pe primul loc.</p>
+                    </div>
+                    <div class="col align-items-start my-5">
+                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-pizza-slice"></i>
+                        <h4 class="fw-bold mb-0">Meniu variat</h4>
+                        <p>Preparate pentru toate gusturile.</p>
+                    </div>
+                    <div class="col align-items-start my-5">
+                        <i style="font-size: 60px; color: #fd9d0b;" class="py-3 my-2 fa fa-birthday-cake"></i>
+                        <h4 class="fw-bold mb-0">Momente unice</h4>
+                        <p>Rezervă pentru momentele importante din viața ta</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Features end-->
+
+    <!--Menu Carousel (menu-modal reference)-->
+    <div class="container text-section my-4 py-3 pb-5">
+        <h1 class="m-3 mb-5 text-center"><span>Buc</span>ate din meniu</h1>
+        <div class="for-our-menu">
+            <!--Tabs and labels-->
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1">Pizza</label>
+
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2">Salate</label>
+
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3">Bucate din carne</label>
+
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4">Mancarea mamei</label>
+
+            <input id="tab5" type="radio" name="tabs">
+            <label for="tab5">Deserturi</label>
+
+            <input id="tab6" type="radio" name="tabs">
+            <label for="tab6">Băuturi</label>
+
+            <!--Section 1 "Pizza"-->
+            <div id="sections">
+                <section id="content1">
+                    <div class="row justify-content-between">
+                        <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
+                            <img src="Images/index/image-menu-main.png" alt="" class="img-fluid img-main-menu">
+                        </div>
+                        <div class="col col-md-5 d-flex align-items-center">
+                            <!--Content-->
+                            <div class="mx-3 my-4">
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section1_1.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Pizza Diabola</h5>
+                                        <p class="m-0">mozzarella, salam picant, ardei gras, sos, chilli</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section1_2.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Pizza Rucola</h5>
+                                        <p class="m-0">mozzarella, rucola, parmezan, prosciutto crudo</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section1_3.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Pizza Funghi</h5>
+                                        <p class="m-0">mozzarella, ciuperci, masline, oregano</p>
+                                    </div>
+                                </div>
+                                <div> <button onclick="location.href = 'menu-local.html';" class=" my-3 text-white"
+                                        id="button" type="button"><b>Vezi meniul</b></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Section 2 "Salate"-->
+                <section id="content2">
+                    <div class="row justify-content-between w-90">
+                        <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
+                            <img src="Images/index/image-menu-main2.png" alt="" class="img-fluid img-main-menu">
+                        </div>
+                        <div class="col col-md-5 d-flex align-items-center">
+                            <!--Content-->
+                            <div class="mx-3 my-4">
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section2_1.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Salată Grecească</h5>
+                                        <p class="m-0">roșii, castraveți, măsline, brânză bulgărească</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section2_2.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Salată Province</h5>
+                                        <p class="m-0">piept pui, parmezan, ardei gras, ouă de prepeliță</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section2_3.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Salată Ceasar</h5>
+                                        <p class="m-0">piept de pui, roșii, parmezan, ouă de prepeliță</p>
+                                    </div>
+                                </div>
+                                <div> <button onclick="location.href = 'menu-modal.html';" class=" my-3 text-white"
+                                        id="button" type="button"><b>Vezi meniul</b></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Section 3 "Bucate din carne"-->
+                <section id="content3">
+                    <div class="row justify-content-between w-90">
+                        <div class="col col-md-6 d-flex justify-content-between align-items-center d-none d-md-block">
+                            <img src="Images/index/image-menu-main3.png" alt="" class="img-fluid img-main-menu">
+                        </div>
+                        <div class="col col-md-5 d-flex align-items-center">
+                            <!--Content-->
+                            <div class="mx-3 my-4">
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section3_1.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Mix Grill</h5>
+                                        <p class="m-0">steak de pui și de porc, cârnăciori, legume</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section3_2.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Frigărui de porc</h5>
+                                        <p class="m-0">carne de porc, condimente</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section3_3.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Somon cu legume la grătar</h5>
+                                        <p class="m-0">somon, roșii, ardei gras</p>
+                                    </div>
+                                </div>
+                                <div> <button onclick="location.href = 'menu-local.html';" class=" my-3 text-white"
+                                        id="button" type="button"><b>Vezi meniul</b></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Section 4 "Mancarea mamei"-->
+                <section id="content4">
+                    <div class="row justify-content-between w-90">
+                        <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
+                            <img src="Images/index/image-menu-main4.png" alt="" class="img-fluid img-main-menu">
+                        </div>
+                        <div class="col col-md-5 d-flex align-items-center">
+                            <!--Content-->
+                            <div class="mx-3 my-4">
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section4_1.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Supa crem de ciuperci cu pui</h5>
+                                        <p class="m-0">piept de pui, ciuperci, parmezan, frișcă</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section4_2.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Zeama</h5>
+                                        <p class="m-0">bulion, carne de găină, legume, tăieței</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section4_3.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Soleanca</h5>
+                                        <p class="m-0">salam, becon, șuncă, ciuperci, măsline, ardei</p>
+                                    </div>
+                                </div>
+                                <div> <button onclick="location.href = 'menu-modal.html';" class=" my-3 text-white"
+                                        id="button" type="button"><b>Vezi meniul</b></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Section 5 "Desert"-->
+                <section id="content5">
+                    <div class="row justify-content-between w-90">
+                        <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
+                            <img src="Images/index/image-menu-main5.png" alt="" class="img-fluid img-main-menu">
+                        </div>
+                        <div class="col col-md-5 d-flex align-items-center">
+                            <!--Content-->
+                            <div class="mx-3 my-4">
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section5_1.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Cake</h5>
+                                        <p class="m-0">blat tort, fructe în sirop</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section5_2.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Tiramisu</h5>
+                                        <p class="m-0">sirop de cafea, mascarpone, vanilie</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section5_3.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Pancakes</h5>
+                                        <p class="m-0">gem de vișină, înghețată</p>
+                                    </div>
+                                </div>
+                                <div> <button onclick="location.href = 'menu-local.html';" class=" my-3 text-white"
+                                        id="button" type="button"><b>Vezi meniul</b></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Section 6 "Bauturi"-->
+                <section id="content6">
+                    <div class="row justify-content-between w-90">
+                        <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
+                            <img src="Images/index/image-menu-main6.png" alt="" class="img-fluid img-main-menu">
+                        </div>
+                        <div class="col col-md-5 d-flex align-items-center">
+                            <!--Content-->
+                            <div class="mx-3 my-4">
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section6_1.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Ciocolată fierbinte</h5>
+                                        <p class="m-0">albă/neagră/adaosuri</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section6_2.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Bere Metropolis</h5>
+                                        <p class="m-0">Efes, Kozel Brun, bere Neipa</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex my-4">
+                                    <img height="80px" width="80px" class="me-3" src="Images/index/section6_3.png">
+                                    <div class="mt-4 mb-0">
+                                        <h5 class="m-0">Coktailuri</h5>
+                                        <p class="m-0">Cinderella, Cabriolet, Mojito, Aperol</p>
+                                    </div>
+                                </div>
+                                <div> <button onclick="location.href = 'menu-modal.html';" class=" my-3 text-white"
+                                        id="button" type="button"><b>Vezi meniul</b></button></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!--Menu Carousel (menu-modal reference) end-->
+
+    <!--Review section-->
+    <div class=" bg-image mt-4 m-0" style="background-image: url('Images/index/bg-review.jpeg');">
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.85);">
+            <div class="container text-section">
+                <h1 class="py-3 mb-4 text-center"><span>Re</span>view section</h1>
+                <div>
+                    <div class="inner m-auto" style="max-width: 1200px;">
+                        <div class="border"></div>
+                        <div class="row my-3">
+
+                            <!--Review item-->
+                            <div id="first-review" class="col">
+                                <div class="py-4 bg-dark text-white text-center">
+                                    <img class="rounded-circle" width="100px" height="100px"
+                                        src="Images/index/woman-user.png">
+                                    <div class="my-3 mx-0" style="font-size: 20px;">Катана Ульяна Викторовна</div>
+                                    <div class="mb-3" style="color: #fd9d0b;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p class="mx-3">
+                                        Salate sănătoase / Great cocktails<br>
+                                        Servire excelentă, atmosfera placută si relaxantă, muzică live, mâncare gustoasă
+                                        și la preț ieftin.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Review item-->
+                            <div id="second-review" class="col">
+                                <div class="py-4 bg-dark text-white text-center">
+                                    <img class="rounded-circle" width="100px" height="100px"
+                                        src="Images/index/man-user.png">
+                                    <div class="my-3 mx-0" style="font-size: 20px;">Zgherea Marius-Marcel</div>
+                                    <div class="mb-3" style="color: #fd9d0b;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mx-3">
+                                        Un restaurant foarte bun, pe care îl găsești cu bucate tradiționale moldovenești
+                                        cât și internaționale.
+                                        Recomand cu încredere.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Review item-->
+                            <div id="third-review" class="col">
+                                <div class="py-4 bg-dark text-white text-center">
+                                    <img class="rounded-circle" width="100px" height="100px"
+                                        src="Images/index/woman-user.png">
+                                    <div class="my-3 mx-0" style="font-size: 20px;">Rodica Cocoș</div>
+                                    <div class="mb-3" style="color: #fd9d0b;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p class="mx-3">
+                                        Îmi place mult aici! Recomand tuturor celor care vor sa manânce gustos! <br>
+                                        Atmosferă romantică / Listă de vinuri bogată / Relaxare
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--Review section end-->
+
+    <!--Cookie-container-->
+    <div class="cookie-disclaimer">
+        <div class="cookie-close accept-cookie"><i class="fa fa-times"></i></div>
+        <div class="container">
+            <h4>Acest website a fost realizat în cadrul competiției <b>”Tekwill Junior Ambassadors”</b> organizată de
+                proiectul
+                <b>”Tekwill în Fiecare Școală”</b> și nu reflectă neapărat opinia proiectului.
+            </h4>
+            <div> <button class="my-3 text-white accept-cookie" id="button" type="button"><b>Închide</b></button></div>
+        </div>
+    </div>
+    <!--Cookie-container-->
+
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="mb-3 m-5 text-center" id="title">Contacteaza-ne</h6>
+                    <p class="footer-paragraf"><i class="fas fa-phone me-3 "></i> 0 (67) 270071</p>
+                    <p class="footer-paragraf"><i class="fas fa-home me-3 "></i>str. Mihai Eminescu 43, Cahul</p>
+                    <p class="footer-paragraf"><i class="fas fa-envelope me-3"></i>metropolis@gmail.com</p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 id="title" class="text-center m-4 mb-3"></i>Metropolis</h6>
+                    <p class="footer-paragraf">
+                        Metropolis este pentru a vă oferi un spațiu de colaborare centrat pe mâncăruri și băuturi de
+                        calitate pe gustul tuturor.
+                    </p>
+                    <div class="mt-5 text-center">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.facebook.com/MetropolisCahul" role="button">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.instagram.com/metropolis_cahul/" role="button">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+
+                        <!-- Tripadvisor -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.tripadvisor.com/Restaurant_Review-g777839-d23549254-Reviews-Metropolis_Cahul-Cahul_Cahul_District.html"
+                            role="button">
+                            <img src="images/icons/icons8-tripadvisor.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4 ">
+                    <h6 class="m-5 mb-3 text-center" id="title">Program de lucru</h6>
+                    <p class="footer-paragraf">În fiecare zi</p>
+                    <p class="footer-paragraf">8:30 - 00:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            © 2023 Copyright: Web Foxes Team
+        </div>
+        <div class="text-center p-3" style="background-color: #fd9d0b;"></div>
+    </footer>
+    <!--Footer-->
+
+    <script>
+        let i = 0;
+        function checkRadioButtons() {
+            const radioButtons = document.querySelectorAll("input[type='radio']");
+            radioButtons.forEach(rb => rb.checked = false);
+            radioButtons[i].checked = true;
+            i++;
+            if (i === radioButtons.length) {
+                i = 0;
+            }
+        }
+        let intervalId = setInterval(checkRadioButtons, 3000);
+    </script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./public/js/main.js"></script>
+</body>
+
+</html>
