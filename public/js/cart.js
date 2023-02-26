@@ -130,7 +130,7 @@ const contactEmailElement = document.querySelector("#contact-email");
 const commandButtonElement = document.querySelector("#command-btn");
 
 const sendEmail = (email) => {
-  let secureToken = "30eafaa0-4f2f-4ac2-af6d-31de621a0159";
+  let secureToken = "838d9357-3784-486f-95cf-9bd2a9883e64";
   const cart_items = document.querySelectorAll('.title-item-card')
   const totalPrice = document.getElementById('total-price')
   
@@ -143,7 +143,7 @@ const sendEmail = (email) => {
   htmlBody += `<p>La prețul total de <b>${totalPrice.innerText}</b></p>`
   Email.send({
     SecureToken: secureToken,
-    From: "aurica.apareci@gmail.com",
+    From: "metropolis.cahul@gmail.com",
     To: email,
     Subject: "Metropolis Cahul. Comanda dumneavoastra a fost confirmata !",
     Body: htmlBody,
@@ -151,7 +151,7 @@ const sendEmail = (email) => {
     console.log(message);
     if (message === 'OK') {
       alert("Comanda a fost confirmata!");
-      location.reload();
+      location.replace("/menu-modal.html")
       updateLS(CART_PRODUCTS_KEY, []);
     }});
 };
