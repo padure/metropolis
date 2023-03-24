@@ -24,7 +24,7 @@ const Card = ({ id, nume, img, pret, categorie }) => {
             <i class="fas fa-plus"></i>
           </button>
         </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 offset-lg-1">
+        <div class="col-md-2 col-lg-2 col-xl-2">
           <h6 class="my-3" id="product-price">${pret} mdl</h6>
         </div>
         <div class="col-md-1 col-lg-1 col-xl-1 text-end">
