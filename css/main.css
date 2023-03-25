@@ -384,6 +384,17 @@ input:checked + label {
 }
 
 /*About us page*/
+.team-member{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.team-member-body{
+  font-variant: small-caps;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 0.7rem;
+}
 .icon-section div {
   background-color: #fd9d0b;
 }
