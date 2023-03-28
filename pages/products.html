@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Metropolis Cahul pune la dispoziția voastră o colecție vibrantă de preparate diverse și delicioase. Nu ezita sa vezi meniul !">
+    <meta name="keywords"
+        content="Metropolis, Cahul, livrare, bucatarie variata, bucate calde, pizza, salate, bucate din carne, garnituri, platouri, desert, bauturi, preturi accesibile">
+        <meta name="author" content="Apareci Aurica">
+    <meta name="author" content="Babaianu Savelie">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meniu | Metropolis</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/a9719e28a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3 my-navbar" >
+        <div class="container">
+
+            <!--Toggle Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand">
+                <img width="110px" src="Images/logo-black.png">
+            </a>
+
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-2"><a href="menu-modal.html" class="nav-link active">Meniu</a></li>
+                    <li class="nav-item mx-2"><a href="menu-local.html" class="nav-link">Meniu în sală</a></li>
+                    <li class="nav-item mx-2"><a href="about_us.html" class="nav-link">Despre noi</a></li>
+                    <li class="nav-item mx-2"><a href="contact.html"class="nav-link">Contacte</a></li>
+                </ul>
+            </div>
+
+            <!--Shopping cart-->
+            <div class="position-relative ms-0 ms-md-5 me-2">
+                <a href="cart.html" class="shopping-cart">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+                <div id="items-count">0</div>
+            </div>
+        </div>
+    </nav>
+    <!--Navbar end-->
+
+    <div class="container menu-main-page">
+        <div class="row gap-30">
+            <!--Navbar menu section-->
+            <div class="nav-menu col-md-3 mb-4">
+                <nav class="nav">
+                    <h3 class="mx-4 mt-3 mb-1 category-title">Categorii</h3>
+                    <!--Categorii-->
+                    <div id="category-links"></div>
+                </nav>
+            </div>
+
+            <!--Carousels-->
+            <div class="col-md-8" id="carousels">
+            </div>
+        </div>
+    </div>
+
+    <!--Spinner-->
+    <div id="bg-spinner">
+        <div id="spinner" class="spinner-border text-light" role="status">
+        </div>
+    </div>
+    <!--Spinner end-->
+
+    <!-- Back to top button -->
+    <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!--Footer-->
+    <footer class="bg-dark text-center text-white">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="mb-3 m-5 text-center" id="title">Contacteaza-ne</h6>
+                    <p class="footer-paragraf"><i class="fas fa-phone me-3 "></i> 0 (67) 270071</p>
+                    <p class="footer-paragraf"><i class="fas fa-home me-3 "></i>str. Mihai Eminescu 43, Cahul</p>
+                    <p class="footer-paragraf"><i class="fas fa-envelope me-3"></i>metropolis@gmail.com</p>
+
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 id="title" class="text-center m-4 mb-3"></i>Metropolis</h6>
+                    <p class="footer-paragraf">
+                        Metropolis este pentru a vă oferi un spațiu de colaborare centrat pe mâncăruri și băuturi de
+                        calitate pe gustul tuturor.
+                    </p>
+                    <div class="mt-5 text-center">
+                        <!-- Facebook -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.facebook.com/MetropolisCahul" role="button">
+                            <i class="fa fa-facebook-f"></i>
+                        </a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.instagram.com/metropolis_cahul/" role="button">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+
+                        <!-- Tripadvisor -->
+                        <a class="btn btn-outline-light btn-floating m-1"
+                            href="https://www.tripadvisor.com/Restaurant_Review-g777839-d23549254-Reviews-Metropolis_Cahul-Cahul_Cahul_District.html"
+                            role="button">
+                            <img src="Images/icons/icons8-tripadvisor.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4 ">
+                    <h6 class="m-5 mb-3 text-center" id="title">Program de lucru</h6>
+                    <p class="footer-paragraf">În fiecare zi</p>
+                    <p class="footer-paragraf">8:30 - 00:00</p>
+                </div>
+            </div>
+        </div>
+        <div class="my-4">
+            © 2023 Copyright: Web Foxes Team
+        </div>
+        <div class="text-center p-3" style="background-color: #fd9d0b;"></div>
+    </footer>
+    <!--Footer-->
+
+    <!--Modal-->
+    <!--================================================================-->
+    <div class="my-modal-s modal fade product_view" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="row">
+                    <div class="col-sm-5 product_img">
+                        <img class="img-responsive rounded" id="product-image" src="">
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="modal-header mx-3">
+                            <h3 class="modal-title mx-0" id="product-title"></h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="product_content my-2">
+                                    <p class="mx-3 mb-0" id="product-description"></p>
+                                    <p class="mx-3 my-0" id="product-weight"><i></i></p>
+                                    <div class="mx-3 mt-5 align">
+                                        <div class="d-flex">
+                                            <h5>Valoarea comenzii:</h5>
+                                            <h5 class="mx-2" id="product-price"></h5>
+                                        </div>
+                                        <div class="d-grid">
+                                            <button class="btn btn-outline-secondary d-flex justify-content-center align-items-center"
+                                                type="button" id="add-to-cart-button" 
+                                                data-md-id=""
+                                                data-bs-dismiss="modal"
+                                                aria-label="Close">
+                                                În coș
+                                                <i class="px-3 fa fa-cart-arrow-down" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================================================================-->
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="./public/js/menu-modal.js"></script>
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>

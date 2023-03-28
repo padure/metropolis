@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="Metropolis Cahul pune la dispoziția voastră o colecție vibrantă de preparate diverse și delicioase. Nu ezita sa vezi meniul !">
+  <meta name="keywords"
+    content="Metropolis, Cahul, livrare, bucatarie variata, bucate calde, pizza, salate, bucate din carne, garnituri, platouri, desert, bauturi, preturi accesibile">
+    <meta name="author" content="Apareci Aurica">
+    <meta name="author" content="Babaianu Savelie">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cos</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/cart.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans:wght@500&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a9719e28a4.js" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <style>
+    #title {
+      font-family: 'Oleo Script', cursive;
+      font-size: 24px;
+    }
+
+    .footer-paragraf {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 8px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3 my-navbar">
+    <div class="container">
+
+      <!--Toggle Button-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a href="index.html" class="navbar-brand">
+        <img width="110px" src="Images/logo-black.png">
+      </a>
+
+      <div class="collapse navbar-collapse" id="mobileNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2"><a href="menu-modal.html" class="nav-link">Meniu</a></li>
+          <li class="nav-item mx-2"><a href="menu-local.html" class="nav-link">Meniu în sală</a></li>
+          <li class="nav-item mx-2"><a href="about_us.html" class="nav-link">Despre noi</a></li>
+          <li class="nav-item mx-2"><a href="contact.html" class="nav-link">Contacte</a></li>
+        </ul>
+      </div>
+
+      <!--Shopping cart-->
+      <div class="position-relative ms-0 ms-md-5 me-2">
+        <a href="cart.html" class="shopping-cart">
+          <i class="text-white fa fa-shopping-cart"></i>
+        </a>
+        <div id="items-count">0</div>
+      </div>
+    </div>
+  </nav>
+  <!--Navbar-->
+
+  <section class="h-100 h-custom mt-5 py-3">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2 bg-dark" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-8">
+                  <div class="p-5">
+
+                    <!--Articles-->
+                    <div class="d-flex justify-content-between align-items-center mb-5">
+                      <h1 class="fw-bold mb-0 text-black">Articole în coș</h1>
+                      <h6 class="mb-0 text-muted" id="products-counter">0 produse</h6>
+                    </div>
+                    <hr class="my-4">
+                    <div id="cart_items">
+
+                    </div>
+                  </div>
+                </div>
+
+                <!--Validate the comand-->
+                <div class="col-lg-4">
+                  <div class="p-5">
+                    <h3 class="fw-bold mb-5 mt-2 pt-1">Continuă comanda</h3>
+                    <hr class="my-4">
+
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5>Preț comandă</h5>
+                      <h5 id="total-price">0 mdl</h5>
+                    </div>
+                    <hr class="my-4">
+
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5>Livrare</h5>
+                      <h5 id="shipping-cost">50 mdl</h5>
+                    </div>
+
+                    <h5 class=" mb-3 mt-5 pt-5">Confirmă comanda</h5>
+
+                    <div class="mb-3">
+                      <div class="form-outline">
+                        <label for="contact-telefon">Numărul de telefon</label>
+                        <input type="number" class="form-control " id="contact-telefon"
+                          placeholder="Introduceti telefonul: " />
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <div class="form-outline">
+                        <label for="ontact-email">Adresa de email</label>
+                        <input type="email" class="form-control" id="contact-email" placeholder="Introduceti email: " />
+                      </div>
+                    </div>
+
+                    <hr class="my-1">
+
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5>Preț total</h5>
+                      <h5 id="final-price">50 mdl</h5>
+                    </div>
+
+                    <div> <button class="my-3 text-white" id="command-btn" type="button"><b>Comandă</b></button></div>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Footer-->
+  <footer class="bg-dark text-center text-white">
+    <div class="container text-center text-md-start">
+      <div class="row">
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+          <h6 class="mb-3 m-5 text-center" id="title">Contacteaza-ne</h6>
+          <p class="footer-paragraf"><i class="fas fa-phone me-3 "></i> 0 (67) 270071</p>
+          <p class="footer-paragraf"><i class="fas fa-home me-3 "></i>str. Mihai Eminescu 43, Cahul</p>
+          <p class="footer-paragraf"><i class="fas fa-envelope me-3"></i>metropolis@gmail.com</p>
+
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h6 id="title" class="text-center m-4 mb-3"></i>Metropolis</h6>
+          <p class="footer-paragraf">
+            Metropolis este pentru a vă oferi un spațiu de colaborare centrat pe mâncăruri și băuturi de
+            calitate pe gustul tuturor.
+          </p>
+          <div class="mt-5 text-center">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/MetropolisCahul"
+              role="button">
+              <i class="fa fa-facebook-f"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/metropolis_cahul/"
+              role="button">
+              <i class="fa fa-instagram"></i>
+            </a>
+
+            <!-- Tripadvisor -->
+            <a class="btn btn-outline-light btn-floating m-1"
+              href="https://www.tripadvisor.com/Restaurant_Review-g777839-d23549254-Reviews-Metropolis_Cahul-Cahul_Cahul_District.html"
+              role="button">
+              <img src="Images/icons/icons8-tripadvisor.svg" alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4 ">
+          <h6 class="m-5 mb-3 text-center" id="title">Program de lucru</h6>
+          <p class="footer-paragraf">În fiecare zi</p>
+          <p class="footer-paragraf">8:30 - 00:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="my-4">
+      © 2023 Copyright: Web Foxes Team
+    </div>
+    <div class="text-center p-3" style="background-color: #fd9d0b;"></div>
+  </footer>
+  <!--Footer-->
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="module" src="./public/js/cart.js"></script>
+</body>
+
+</html>

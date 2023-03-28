@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
 * *:before,
 *:after {
   box-sizing: border-box;
@@ -384,12 +386,12 @@ input:checked + label {
 }
 
 /*About us page*/
-.team-member{
+.team-member {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
-.team-member-body{
+.team-member-body {
   font-variant: small-caps;
   letter-spacing: 4px;
   text-align: center;
