@@ -2,7 +2,7 @@
     {
         "id" : "1",
         "nume": "Pizza Capriciosa",
-        "img":"../Images/menu-modal/pizza-section/capriciosa.jpg",
+        "img":"../public/assets/images/menu-modal/pizza-section/capriciosa.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, ciuperci, piept de pui, șuncă, roșii, măsline, oregano",
         "cantitate": 500,
@@ -11,7 +11,7 @@
     {
         "id" : "2",
         "nume": "Pizza Rucola",
-        "img":"../Images/menu-modal/pizza-section/rucola.jpg",
+        "img":"/pizza-section/rucola.jpg",
         "pret": 105,
         "descriere": "Blat pizza, sos roșii, mozzarella, rucola, parmezan, roșii uscate, prosciutto crudo, oregano",
         "cantitate": 500,

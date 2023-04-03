@@ -2,11 +2,11 @@ import {
   getProductsFromLS,
   updateLS,
   CART_PRODUCTS_KEY,
-} from "../../helpers/storage-helper.js";
+} from "../js/helpers/storage-helper.js";
 
 const productsCounter = document.querySelector("#items-count");
 
-fetch("data/produse.json")
+fetch("../../data/produse.json")
   .then((response) => response.json())
   .then((items) => {
     const categories = new Set(items.map((item) => item.categorie));
@@ -24,7 +24,7 @@ fetch("data/produse.json")
   .catch((error) => console.error(error));
 
 //generating the category and the carousel for each category
-fetch("data/produse.json")
+fetch("../../data/produse.json")
   .then((response) => response.json())
   .then((items) => {
     const categories = new Set(items.map((item) => item.categorie));
@@ -36,11 +36,11 @@ fetch("data/produse.json")
       const categorySection = document.createElement("div");
       categorySection.id = category;
       categorySection.classList.add("mt-3");
-      let catSectClass = (key === 0)?"pt-1":"pt-10"
+      let catSectClass = key === 0 ? "pt-1" : "pt-10";
       categorySection.classList.add(`${catSectClass}`);
       //generating the headings
       const heading = document.createElement("h2");
-      heading.classList.add('category-title-carousel');
+      heading.classList.add("category-title-carousel");
       heading.textContent = category;
       categorySection.appendChild(heading);
 
@@ -198,7 +198,7 @@ const addToCartBtn = document.querySelector("#add-to-cart-button");
 
 addToCartBtn.addEventListener("click", () => {
   const id = addToCartBtn.dataset.mdId;
-    cartProducts.unshift(id);
+  cartProducts.unshift(id);
   const uniqueProducts = new Set(cartProducts);
   updateLS(CART_PRODUCTS_KEY, [...uniqueProducts]);
   updateProductsCounter(uniqueProducts.size);

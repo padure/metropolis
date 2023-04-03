@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./public/css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,22 +37,22 @@
                 </button>
 
                 <a href="index.html" class="navbar-brand">
-                    <img width="110px" src="Images/logo-black.png">
+                    <img width="110px" src="./public/assets/images/logo-black.png">
                 </a>
 
                 <div class="collapse navbar-collapse" id="mobileNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-2"><a href="./pages/products.html
-                            " class="nav-link">Meniu</a></li>
-                        <li class="nav-item mx-2"><a href="menu-local.html" class="nav-link">Meniu în sală</a></li>
-                        <li class="nav-item mx-2"><a href="/pages/about/" class="nav-link">Despre noi</a></li>
-                        <li class="nav-item mx-2"><a href="contact.html" class="nav-link">Contacte</a></li>
+                        <li class="nav-item mx-2"><a href="./pages/products.html" class="nav-link">Meniu</a></li>
+                        <li class="nav-item mx-2"><a href="./pages/menu-local.html" class="nav-link">Meniu în sală</a>
+                        </li>
+                        <li class="nav-item mx-2"><a href="./pages/about.html" class="nav-link">Despre noi</a></li>
+                        <li class="nav-item mx-2"><a href="./pages/contact.html" class="nav-link">Contacte</a></li>
                     </ul>
                 </div>
 
                 <!--Shopping cart-->
                 <div class="position-relative ms-0 ms-md-5 me-2">
-                    <a href="cart.html" class="shopping-cart">
+                    <a href="./pages/cart.html" class="shopping-cart">
                         <i class="fa fa-shopping-cart"></i>
                     </a>
                     <div id="items-count">0</div>
@@ -99,7 +99,8 @@
                     </div>
                 </div>
                 <div class="col col-md-5 d-flex justify-content-between align-items-center d-none d-md-block">
-                    <img height="700px" width="600px" src="Images/index/hero-image-item.png" alt="" class="img-fluid">
+                    <img height="700px" width="600px" src="./public/assets/images/index/hero-image-item.png"
+                        alt="Supa ball" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -133,10 +134,10 @@
         </div>
         <!--gallery-->
         <div class="m-4">
-            <img class="img-the-best-food" src="Images/index/gallery1.png">
+            <img class="img-the-best-food" src="./public/assets/images/index/gallery1.png">
             <div class="d-flex my-3 images-food">
-                <img src="Images/index/gallery2.png">
-                <img src="Images/index/gallery3.png">
+                <img src="./public/assets/images/index/gallery2.png">
+                <img src="./public/assets/images/index/gallery3.png">
             </div>
         </div>
         <!--gallery-->
@@ -144,8 +145,8 @@
     <!--Best foody products (about us reference) end-->
 
     <!--Features-->
-    <div class=" bg-image my-3 mx-0" style="background-image: url('Images/index/bg-features.jpg');">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.9);">
+    <div class=" bg-image my-3 mx-0 feature">
+        <div class="mask">
             <div class="container">
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 my-5">
                     <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
@@ -202,27 +203,31 @@
                 <section id="content1">
                     <div class="row justify-content-between">
                         <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
-                            <img src="Images/index/image-menu-main.png" alt="" class="img-fluid img-main-menu">
+                            <img src="./public/assets/images/index/image-menu-main.png" alt=""
+                                class="img-fluid img-main-menu">
                         </div>
                         <div class="col col-md-5 d-flex align-items-center">
                             <!--Content-->
                             <div class="mx-3 my-4">
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section1_1.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section1_1.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Pizza Diabola</h5>
                                         <p class="m-0">mozzarella, salam picant, ardei gras, sos, chilli</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section1_2.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section1_2.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Pizza Rucola</h5>
                                         <p class="m-0">mozzarella, rucola, parmezan, prosciutto crudo</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section1_3.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section1_3.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Pizza Funghi</h5>
                                         <p class="m-0">mozzarella, ciuperci, masline, oregano</p>
@@ -239,27 +244,31 @@
                 <section id="content2">
                     <div class="row justify-content-between w-90">
                         <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
-                            <img src="Images/index/image-menu-main2.png" alt="" class="img-fluid img-main-menu">
+                            <img src="./public/assets/images/index/image-menu-main2.png" alt=""
+                                class="img-fluid img-main-menu">
                         </div>
                         <div class="col col-md-5 d-flex align-items-center">
                             <!--Content-->
                             <div class="mx-3 my-4">
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section2_1.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section2_1.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Salată Grecească</h5>
                                         <p class="m-0">roșii, castraveți, măsline, brânză bulgărească</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section2_2.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section2_2.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Salată Province</h5>
                                         <p class="m-0">piept pui, parmezan, ardei gras, ouă de prepeliță</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section2_3.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section2_3.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Salată Ceasar</h5>
                                         <p class="m-0">piept de pui, roșii, parmezan, ouă de prepeliță</p>
@@ -276,27 +285,31 @@
                 <section id="content3">
                     <div class="row justify-content-between w-90">
                         <div class="col col-md-6 d-flex justify-content-between align-items-center d-none d-md-block">
-                            <img src="Images/index/image-menu-main3.png" alt="" class="img-fluid img-main-menu">
+                            <img src="./public/assets/images/index/image-menu-main3.png" alt=""
+                                class="img-fluid img-main-menu">
                         </div>
                         <div class="col col-md-5 d-flex align-items-center">
                             <!--Content-->
                             <div class="mx-3 my-4">
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section3_1.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section3_1.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Mix Grill</h5>
                                         <p class="m-0">steak de pui și de porc, cârnăciori, legume</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section3_2.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section3_2.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Frigărui de porc</h5>
                                         <p class="m-0">carne de porc, condimente</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section3_3.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section3_3.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Somon cu legume la grătar</h5>
                                         <p class="m-0">somon, roșii, ardei gras</p>
@@ -313,27 +326,31 @@
                 <section id="content4">
                     <div class="row justify-content-between w-90">
                         <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
-                            <img src="Images/index/image-menu-main4.png" alt="" class="img-fluid img-main-menu">
+                            <img src="./public/assets/images/index/image-menu-main4.png" alt=""
+                                class="img-fluid img-main-menu">
                         </div>
                         <div class="col col-md-5 d-flex align-items-center">
                             <!--Content-->
                             <div class="mx-3 my-4">
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section4_1.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section4_1.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Supa crem de ciuperci cu pui</h5>
                                         <p class="m-0">piept de pui, ciuperci, parmezan, frișcă</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section4_2.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section4_2.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Zeama</h5>
                                         <p class="m-0">bulion, carne de găină, legume, tăieței</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section4_3.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section4_3.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Soleanca</h5>
                                         <p class="m-0">salam, becon, șuncă, ciuperci, măsline, ardei</p>
@@ -350,27 +367,31 @@
                 <section id="content5">
                     <div class="row justify-content-between w-90">
                         <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
-                            <img src="Images/index/image-menu-main5.png" alt="" class="img-fluid img-main-menu">
+                            <img src="./public/assets/images/index/image-menu-main5.png" alt=""
+                                class="img-fluid img-main-menu">
                         </div>
                         <div class="col col-md-5 d-flex align-items-center">
                             <!--Content-->
                             <div class="mx-3 my-4">
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section5_1.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section5_1.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Cake</h5>
                                         <p class="m-0">blat tort, fructe în sirop</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section5_2.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section5_2.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Tiramisu</h5>
                                         <p class="m-0">sirop de cafea, mascarpone, vanilie</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section5_3.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section5_3.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Pancakes</h5>
                                         <p class="m-0">gem de vișină, înghețată</p>
@@ -387,27 +408,31 @@
                 <section id="content6">
                     <div class="row justify-content-between w-90">
                         <div class="col col-md-7 d-flex justify-content-between align-items-center d-none d-md-block">
-                            <img src="Images/index/image-menu-main6.png" alt="" class="img-fluid img-main-menu">
+                            <img src="./public/assets/images/index/image-menu-main6.png" alt=""
+                                class="img-fluid img-main-menu">
                         </div>
                         <div class="col col-md-5 d-flex align-items-center">
                             <!--Content-->
                             <div class="mx-3 my-4">
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section6_1.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section6_1.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Ciocolată fierbinte</h5>
                                         <p class="m-0">albă/neagră/adaosuri</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section6_2.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section6_2.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Bere Metropolis</h5>
                                         <p class="m-0">Efes, Kozel Brun, bere Neipa</p>
                                     </div>
                                 </div>
                                 <div class="d-flex my-4">
-                                    <img height="80px" width="80px" class="me-3" src="Images/index/section6_3.png">
+                                    <img height="80px" width="80px" class="me-3"
+                                        src="./public/assets/images/index/section6_3.png">
                                     <div class="mt-4 mb-0">
                                         <h5 class="m-0">Coktailuri</h5>
                                         <p class="m-0">Cinderella, Cabriolet, Mojito, Aperol</p>
@@ -425,7 +450,7 @@
     <!--Menu Carousel (menu-modal reference) end-->
 
     <!--Review section-->
-    <div class=" bg-image mt-4 m-0" style="background-image: url('Images/index/bg-review.jpeg');">
+    <div class=" bg-image mt-4 m-0" style="background-image: url('./public/assets/images/index/bg-review.jpeg');">
         <div class="mask" style="background-color: rgba(0, 0, 0, 0.85);">
             <div class="container text-section">
                 <h1 class="py-3 mb-4 text-center"><span>Re</span>view section</h1>
@@ -438,7 +463,7 @@
                             <div id="first-review" class="col-md-4 review">
                                 <div class="py-4 bg-dark text-white text-center">
                                     <img class="rounded-circle" width="100px" height="100px"
-                                        src="Images/index/woman-user.png">
+                                        src="./public/assets/images/index/woman-user.png">
                                     <div class="my-3 mx-0" style="font-size: 18px;">Катана Ульяна Викторовна</div>
                                     <div class="mb-3" style="color: #fd9d0b;">
                                         <i class="fas fa-star"></i>
@@ -459,7 +484,7 @@
                             <div id="second-review" class="col-md-4 review">
                                 <div class="py-4 bg-dark text-white text-center">
                                     <img class="rounded-circle" width="100px" height="100px"
-                                        src="Images/index/man-user.png">
+                                        src="./public/assets/images/index/man-user.png">
                                     <div class="my-3 mx-0" style="font-size: 18px;">Zgherea Marius-Marcel</div>
                                     <div class="mb-3" style="color: #fd9d0b;">
                                         <i class="fas fa-star"></i>
@@ -480,7 +505,7 @@
                             <div id="third-review" class="col-md-4 review">
                                 <div class="py-4 bg-dark text-white text-center">
                                     <img class="rounded-circle" width="100px" height="100px"
-                                        src="Images/index/woman-user.png">
+                                        src="./public/assets/images/index/woman-user.png">
                                     <div class="my-3 mx-0" style="font-size: 18px;">Rodica Cocoș</div>
                                     <div class="mb-3" style="color: #fd9d0b;">
                                         <i class="fas fa-star"></i>
@@ -516,6 +541,7 @@
             <div> <button class="my-3 text-white accept-cookie" id="button" type="button"><b>Închide</b></button></div>
         </div>
     </div>
+
     <!--Cookie-container-->
 
     <!--Footer-->
