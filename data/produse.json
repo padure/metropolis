@@ -11,7 +11,7 @@
     {
         "id" : "2",
         "nume": "Pizza Rucola",
-        "img":"../Images/menu-modal/pizza-section/rucola.jpg",
+        "img":"/pizza-section/rucola.jpg",
         "pret": 105,
         "descriere": "Blat pizza, sos roșii, mozzarella, rucola, parmezan, roșii uscate, prosciutto crudo, oregano",
         "cantitate": 500,
