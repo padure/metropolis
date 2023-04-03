@@ -2,7 +2,7 @@
     {
         "id" : "1",
         "nume": "Pizza Capriciosa",
-        "img":"../Images/menu-modal/pizza-section/capriciosa.jpg",
+        "img":"../public/assets/images/menu-modal/pizza-section/capriciosa.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, ciuperci, piept de pui, șuncă, roșii, măsline, oregano",
         "cantitate": 500,

@@ -53,3 +53,4 @@ const updateProductsCounter = (value) => {
 const cartProducts = getProductsFromLS(CART_PRODUCTS_KEY) || [];
 console.log(cartProducts);
 updateProductsCounter(cartProducts.length);
+
