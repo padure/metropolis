@@ -16,6 +16,8 @@ const getProducts = async () => {
   return products;
 };
 
+
+
 const products = await getProducts();
 let productsFromLS = getProductsFromLS(CART_PRODUCTS_KEY);
 
