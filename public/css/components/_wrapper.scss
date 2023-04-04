@@ -1,0 +1,45 @@
+@use "../base/fonts";
+
+.wrapper {
+  background-image: url("../../public/assets/images/index/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: "Montserrat Regular";
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+  }
+
+  .bar {
+    height: 20vh;
+    width: 3px;
+    background-color: azure;
+    border-radius: 10px;
+  }
+
+  .social-icon {
+    font-size: 1rem;
+    color: #fff;
+
+    &:hover {
+      color: #fd9d0b;
+    }
+  }
+
+  .hero-description {
+    font-family: "Oleo Script";
+    font-size: 4rem;
+  }
+  .hero-cta {
+    background-color: #fd9d0b;
+    border-radius: 2rem;
+  }
+}

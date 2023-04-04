@@ -1,0 +1,6 @@
+@use "./base/fonts";
+@use "./pages/index";
+@use "./utilities/utility";
+body {
+  font-family: "Montserrat Regular", sans-serif;
+}

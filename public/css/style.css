@@ -1,0 +1,88 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../../assets/fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat Light";
+  src: url("../../assets/fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: "Oleo Script Regular";
+  src: url("../../assets/fonts/OleoScript-Regular.ttf");
+}
+@font-face {
+  font-family: "Oleo Script Bold";
+  src: url("../../assets/fonts/OleoScript-Bold.ttf");
+}
+.wrapper {
+  background-image: url("../../public/assets/images/index/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-family: "Montserrat Regular";
+}
+.wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+}
+.wrapper .bar {
+  height: 20vh;
+  width: 3px;
+  background-color: azure;
+  border-radius: 10px;
+}
+.wrapper .social-icon {
+  font-size: 1rem;
+  color: #fff;
+}
+.wrapper .social-icon:hover {
+  color: #fd9d0b;
+}
+.wrapper .hero-description {
+  font-family: "Oleo Script";
+  font-size: 4rem;
+}
+.wrapper .hero-cta {
+  background-color: #fd9d0b;
+  border-radius: 2rem;
+}
+
+.shopping-cart:link,
+.shopping-cart:visited {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.shopping-cart:hover {
+  color: #ddd;
+}
+
+#items-count {
+  position: absolute;
+  right: -10px;
+  top: 0;
+  background-color: red;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 3px;
+}
+
+.color-primary {
+  color: #fd9d0b;
+}
+
+body {
+  font-family: "Montserrat Regular", sans-serif;
+}/*# sourceMappingURL=style.css.map */
