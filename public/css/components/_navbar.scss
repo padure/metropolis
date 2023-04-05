@@ -1,1 +1,6 @@
 @use "../components/shopping-icon";
+
+.dark-version {
+  background-color: rgba(21, 19, 17, 0.8);
+  backdrop-filter: blur(10px);
+}

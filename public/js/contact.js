@@ -1,7 +1,7 @@
 import {
   getProductsFromLS,
   CART_PRODUCTS_KEY,
-} from "../../helpers/storage-helper.js";
+} from "../js/helpers/storage-helper.js";
 
 const productsCounter = document.querySelector("#items-count");
 
