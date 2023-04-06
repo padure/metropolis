@@ -1,0 +1,42 @@
+section{
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+    height: 600px;
+}  
+input{
+    display: none;
+}
+label{
+    display: inline-block;
+    padding: 15px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+input:checked + label{
+    color: white;
+    border-top: 2px solid #fd9d0b;
+}  
+#tab1:checked ~ #sections #content1,
+#tab2:checked ~ #sections #content2,
+#tab3:checked ~ #sections #content3,
+#tab4:checked ~ #sections #content4,
+#tab5:checked ~ #sections #content5,
+#tab6:checked ~ #sections #content6 {
+    display: block;
+}  
+.for-our-menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+#sections {
+  grid-area: 2 / 1 / 7 / 7;
+}
+ 
+.inner {
+   overflow: hidden;
+   padding: 0 20px;
+}
