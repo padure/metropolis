@@ -4,15 +4,15 @@
 }
 @font-face {
   font-family: "Montserrat Light";
-  src: url("../../assets/fonts/Montserrat-Light.ttf");
+  src: url("../../../public/assets/fonts/Montserrat-Light.ttf");
 }
 @font-face {
   font-family: "Oleo Script Regular";
-  src: url("../../assets/fonts/OleoScript-Regular.ttf");
+  src: url("../../../public/assets/fonts/OleoScript-Regular.ttf");
 }
 @font-face {
   font-family: "Oleo Script Bold";
-  src: url("../../assets/fonts/OleoScript-Bold.ttf");
+  src: url("../../../public/assets/fonts/OleoScript-Bold.ttf");
 }
 * *:before,
 *:after {
@@ -24,7 +24,7 @@ body {
   padding: 0;
   background-color: #111111 !important;
   color: white !important;
-  font-family: "Montserrat Regular", sans-serif !important;
+  font-family: sans-serif;
 }
 
 .wrapper {
@@ -32,7 +32,6 @@ body {
   background-size: cover;
   background-position: center;
   position: relative;
-  font-family: "Montserrat Regular";
 }
 .wrapper::after {
   content: "";
@@ -41,7 +40,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0.95));
   z-index: 2;
 }
 .wrapper .bar {
@@ -56,10 +55,6 @@ body {
 }
 .wrapper .social-icon:hover {
   color: #fd9d0b;
-}
-.wrapper .hero-description {
-  font-family: "Oleo Script";
-  font-size: 4rem;
 }
 .wrapper .hero-cta {
   background-color: #fd9d0b;
@@ -102,8 +97,30 @@ body {
   color: #fd9d0b;
 }
 
+/* For text */
+.font-base-light {
+  font-family: "Montserrat Light";
+}
+
+.font-base-regular {
+  font-family: "Montserrat Regular";
+}
+
+.font-second-regular {
+  font-family: "Oleo Script Regular";
+}
+
+.font-second-bold {
+  font-family: "Oleo Script Bold";
+}
+
+/* For background */
 .bg-cover {
   background-size: cover;
+}
+
+.background-primary {
+  background-color: #fd9d0b !important;
 }
 
 .dvh-100 {
@@ -126,4 +143,8 @@ body {
 
 .w-2 {
   grid-column: span 2;
+}
+
+.radius-2 {
+  border-radius: 2rem !important;
 }/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,30 @@
+@use "../base/variables";
 .color-primary {
   color: #fd9d0b;
 }
+
+/* For text */
+.font-base-light {
+  font-family: variables.$base-font-light;
+}
+.font-base-regular {
+  font-family: variables.$base-font-regular;
+}
+.font-second-regular {
+  font-family: variables.$second-font-regular;
+}
+.font-second-bold {
+  font-family: variables.$second-font-bold;
+}
+
+/* For background */
 .bg-cover {
   background-size: cover;
 }
+.background-primary {
+  background-color: #fd9d0b !important;
+}
+
 .dvh-100 {
   height: 100dvh;
 }
@@ -20,4 +41,8 @@
 }
 .w-2 {
   grid-column: span 2;
+}
+
+.radius-2 {
+  border-radius: 2rem !important;
 }
