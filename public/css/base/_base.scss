@@ -1,0 +1,13 @@
+@use "./variables";
+
+* *:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111111 !important;
+  color: white !important;
+  font-family: sans-serif;
+}

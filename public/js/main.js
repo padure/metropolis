@@ -1,9 +1,16 @@
 import {
   getProductsFromLS,
   CART_PRODUCTS_KEY,
-} from "../../helpers/storage-helper.js";
+} from "../js/helpers/storage-helper.js";
 
+const navbar = document.querySelector(".navbar");
 const productsCounter = document.querySelector("#items-count");
+
+window.addEventListener("scroll", () => {
+  window.scrollY > 100
+    ? navbar.classList.add("dark-version")
+    : navbar.classList.remove("dark-version");
+});
 
 //cookie functions
 $(document).ready(function () {
@@ -53,4 +60,3 @@ const updateProductsCounter = (value) => {
 const cartProducts = getProductsFromLS(CART_PRODUCTS_KEY) || [];
 console.log(cartProducts);
 updateProductsCounter(cartProducts.length);
-

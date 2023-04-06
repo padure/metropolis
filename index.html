@@ -13,23 +13,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Metropolis</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!--Css links-->
     <link rel="stylesheet" href="./public/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans:wght@500&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a9719e28a4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
 </head>
 
-<body>
+<body class="font-base-light">
     <!--Wrapper-->
-    <!-- <header class="empty-row py-3"></header> -->
-    <div class="wrapper vh-100 d-flex justify-content-between align-items-center ">
+    <div class="wrapper dvh-100 d-flex justify-content-between align-items-center ">
         <!--Navbar-->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3 my-navbar bg-*">
-            <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top my-navbar bg-*">
+            <div class="container align-items-center">
 
                 <!--Toggle Button-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
@@ -43,17 +40,33 @@
                 <div class="collapse navbar-collapse" id="mobileNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-2"><a href="./pages/menu/index.html" class="nav-link">Meniu</a></li>
-                        <li class="nav-item mx-2"><a href="./pages/menu-local/index.html" class="nav-link">Meniu în sală</a>
+                        <li class="nav-item mx-2"><a href="./pages/menu-local/index.html" class="nav-link">Meniu în
+                                sală</a>
                         </li>
-                        <li class="nav-item mx-2"><a href="./pages/about/index.html" class="nav-link">Despre noi</a></li>
-                        <li class="nav-item mx-2"><a href="./pages/contact/index.html" class="nav-link">Contacte</a></li>
+                        <li class="nav-item mx-2"><a href="./pages/about/index.html" class="nav-link">Despre noi</a>
+                        </li>
+                        <li class="nav-item mx-2"><a href="./pages/contact/index.html" class="nav-link">Contacte</a>
+                        </li>
                     </ul>
                 </div>
 
                 <!--Shopping cart-->
                 <div class="position-relative ms-0 ms-md-5 me-2">
                     <a href="./pages/cart/index.html" class="shopping-cart">
-                        <i class="fa fa-shopping-cart"></i>
+                        <!-- <i class="fa fa-shopping-cart"></i> -->
+                        <svg width="32px" height="32px" viewBox="0 0 24.00 24.00" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"
+                                stroke="#CCCCCC" stroke-width="0.048">
+                            </g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142M4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2M4.78571 5L6.07142 14M6.07142 14L6.25469 15.2828C6.39545 16.2681 7.23929 17 8.23459 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
+                                    stroke="#ffffff" stroke-width="0.552" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
                     </a>
                     <div id="items-count">0</div>
                 </div>
@@ -63,31 +76,32 @@
 
         <!--Hero Section-->
         <div class="container">
-            <div class="row justify-content-between w-90" style="position: relative; z-index: 10;">
+            <div class="row justify-content-between z-index-10">
 
-                <div class="col col-md-5 d-flex align-items-center">
+                <div class="col col-sm-12 col-md-12 col-lg-5  d-flex align-items-center">
 
                     <!--Social Links-->
                     <div class="d-none d-md-flex justify-content-between align-items-center flex-column">
                         <div class="bar"></div>
                         <!--Social Icons-->
-                        <div class="d-flex flex-column gap-2 my-4">
+                        <div class="d-flex flex-column align-items-center gap-2 my-4">
                             <!--Instagram-->
                             <a href="https://www.instagram.com/metropolis_cahul/" class="social-icon">
-                                <i class="fa fa-instagram"></i>
+                                <i class="fab fa-instagram"></i>
                             </a>
 
                             <!--Facebook-->
                             <a href="https://www.facebook.com/MetropolisCahul" class="social-icon">
-                                <i class="fa fa-facebook"></i>
+                                <i class="fab fa-facebook-f"></i>
                             </a>
                         </div>
                         <div class="bar"></div>
                     </div>
 
                     <!--Content-->
-                    <div class="ms-5 text-white">
-                        <h1 class="hero-description"><span class="color-primary">Arta</span> mancarii <br> de calitate
+                    <div class="ms-md-5 text-white text-center text-md-start">
+                        <h1 class="hero-description font-second-bold display-2"><span class="color-primary">Arta</span>
+                            mancarii <br> de calitate
                         </h1>
                         <p>
                             Momentele speciale se savurează cu prietenii dragi și numai cu bucate la fel de bune!
@@ -99,9 +113,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="col col-md-5 d-flex justify-content-between align-items-center d-none d-md-block">
-                    <img height="700px" width="600px" src="./public/assets/images/index/hero-image-item.png"
-                        alt="Supa ball" class="img-fluid">
+                <div
+                    class="col col-sm-0 col-md-0 col-lg-5 d-flex justify-content-between align-items-center d-none d-lg-block">
+                    <img src="./public/assets/images/index/hero-image-item.png" alt="Supa ball" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -109,44 +123,52 @@
     </div>
 
     <!--Best foody products (about us reference)-->
-    <div class="container first-section my-5 py-4">
-        <div class="text-section ms-5">
-            <h1 class="my-2"><span>Noi</span> te servim cu cele mai gustoase preparate</h1>
-            <p class="my-4">
-                Cu o experință de mai bine de 7 ani, <b>Metropolis</b> și-a câștigat încrederea față de oaspeții noștri.
-                De-a lungul timpului bucătăria noastră a fost gazda mai multor evenimente și momente ale oamenilor din
-                diferite colțuri ale lumii.
-                Află mai multe despre pasiunea noastră pentru arta mâncării de calitate.
-            </p>
-            <p>
-                <i class="fa fa-check me-2"></i>
-                Bucate preparate din incrediente naturale.
-            </p>
-            <p>
-                <i class="fa fa-check me-2"></i>
-                Spații de relaxare pentru toate vârstele.
-            </p>
-            <p>
-                <i class="fa fa-check me-2"></i>
-                Cele mai rafinate gusturi pentru tine și prietenii tăi.
-            </p>
-            <div> <button onclick="location.href = 'about_us.html';" class="my-3 text-white" id="button"
-                    type="submit"><b>Despre noi</b></button></div>
-        </div>
-        <!--gallery-->
-        <div class="m-4">
-            <img class="img-the-best-food" src="./public/assets/images/index/gallery1.png">
-            <div class="d-flex my-3 images-food">
-                <img src="./public/assets/images/index/gallery2.png">
-                <img src="./public/assets/images/index/gallery3.png">
+    <div class="container my-5 py-4">
+        <div class="row justify-content-between">
+            <div class="col-sm-12 col-md-6 text-section">
+                <h1 class="my-2 font-second-bold display-4"><span class="color-primary">Noi</span> te servim cu cele mai
+                    gustoase preparate</h1>
+                <p class="my-4">
+                    Cu o experință de mai bine de 7 ani, <b>Metropolis</b> și-a câștigat încrederea față de oaspeții
+                    noștri.
+                    De-a lungul timpului bucătăria noastră a fost gazda mai multor evenimente și momente ale oamenilor
+                    din
+                    diferite colțuri ale lumii.
+                    Află mai multe despre pasiunea noastră pentru arta mâncării de calitate.
+                </p>
+                <p>
+                    <i class="fa fa-check me-2"></i>
+                    Bucate preparate din incrediente naturale.
+                </p>
+                <p>
+                    <i class="fa fa-check me-2"></i>
+                    Spații de relaxare pentru toate vârstele.
+                </p>
+                <p>
+                    <i class="fa fa-check me-2"></i>
+                    Cele mai rafinate gusturi pentru tine și prietenii tăi.
+                </p>
+                <!-- <div> <button onclick="location.href = 'about_us.html';" class="my-3 text-white" id="button"
+                                type="submit"><b>Despre noi</b></button></div> -->
+                <a href="" class="background-primary radius-2 btn text-white px-4 mt-3" role="button">
+                    Vezi meniul
+                </a>
             </div>
+            <!--gallery-->
+            <div class="m-md-4 mt-5 mt-md-0 grid grid-columns-2 col-sm-12 col-md-5">
+                <img class=" bg-cover w-100 h-100 w-2" src="./public/assets/images/index/gallery1.png">
+                <img src="./public/assets/images/index/gallery2.png" class="bg-cover h-100 w-100">
+                <img src="./public/assets/images/index/gallery3.png" class="bg-cover h-100 w-100">
+                <!-- <div class="d-flex my-3 images-food">
+                        </div> -->
+            </div>
+            <!--gallery-->
         </div>
-        <!--gallery-->
     </div>
     <!--Best foody products (about us reference) end-->
 
     <!--Features-->
-    <div class=" bg-image my-3 mx-0 feature">
+    <div class="bg-image my-3 mx-0 feature">
         <div class="mask">
             <div class="container">
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 my-5">
@@ -579,8 +601,8 @@
                         <!-- Tripadvisor -->
                         <a class="btn btn-outline-light btn-floating m-1"
                             href="https://www.tripadvisor.com/Restaurant_Review-g777839-d23549254-Reviews-Metropolis_Cahul-Cahul_Cahul_District.html"
-                            role="button">
-                            <img src="Images/icons/icons8-tripadvisor.svg" alt="">
+                            role="button" target="_blank">
+                            <img src="./public/assets/images/icons/icons8-tripadvisor.svg" alt="">
                         </a>
                     </div>
                 </div>

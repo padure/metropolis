@@ -2,7 +2,7 @@ import {
   getProductsFromLS,
   updateLS,
   CART_PRODUCTS_KEY,
-} from "../../helpers/storage-helper.js";
+} from "../js/helpers/storage-helper.js";
 import { Card } from "../../components/cart-card.js";
 
 const productsContainer = document.querySelector("#cart_items");

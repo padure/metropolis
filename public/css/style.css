@@ -1,25 +1,37 @@
 @font-face {
   font-family: "Montserrat Regular";
-  src: url("../../assets/fonts/Montserrat-Regular.ttf");
+  src: url("../../../public/assets/fonts/Montserrat-Regular.ttf") format(".ttf");
 }
 @font-face {
   font-family: "Montserrat Light";
-  src: url("../../assets/fonts/Montserrat-Light.ttf");
+  src: url("../../../public/assets/fonts/Montserrat-Light.ttf");
 }
 @font-face {
   font-family: "Oleo Script Regular";
-  src: url("../../assets/fonts/OleoScript-Regular.ttf");
+  src: url("../../../public/assets/fonts/OleoScript-Regular.ttf");
 }
 @font-face {
   font-family: "Oleo Script Bold";
-  src: url("../../assets/fonts/OleoScript-Bold.ttf");
+  src: url("../../../public/assets/fonts/OleoScript-Bold.ttf");
 }
+* *:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111111 !important;
+  color: white !important;
+  font-family: sans-serif;
+}
+
 .wrapper {
   background-image: url("../../public/assets/images/index/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
-  font-family: "Montserrat Regular";
 }
 .wrapper::after {
   content: "";
@@ -28,7 +40,7 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0.95));
   z-index: 2;
 }
 .wrapper .bar {
@@ -43,10 +55,6 @@
 }
 .wrapper .social-icon:hover {
   color: #fd9d0b;
-}
-.wrapper .hero-description {
-  font-family: "Oleo Script";
-  font-size: 4rem;
 }
 .wrapper .hero-cta {
   background-color: #fd9d0b;
@@ -79,10 +87,64 @@
   padding: 3px;
 }
 
+.dark-version {
+  background-color: rgba(21, 19, 17, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .color-primary {
   color: #fd9d0b;
 }
 
-body {
-  font-family: "Montserrat Regular", sans-serif;
+/* For text */
+.font-base-light {
+  font-family: "Montserrat Light";
+}
+
+.font-base-regular {
+  font-family: "Montserrat Regular";
+}
+
+.font-second-regular {
+  font-family: "Oleo Script Regular";
+}
+
+.font-second-bold {
+  font-family: "Oleo Script Bold";
+}
+
+/* For background */
+.bg-cover {
+  background-size: cover;
+}
+
+.background-primary {
+  background-color: #fd9d0b !important;
+}
+
+.dvh-100 {
+  height: 100dvh;
+}
+
+.z-index-10 {
+  position: relative;
+  z-index: 10;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.radius-2 {
+  border-radius: 2rem !important;
 }/*# sourceMappingURL=style.css.map */

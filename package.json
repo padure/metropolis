@@ -2,6 +2,7 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.3",
-    "owl.carousel": "^2.3.4"
+    "owl.carousel": "^2.3.4",
+    "typeit": "^8.7.1"
   }
 }

@@ -2,7 +2,7 @@
     {
         "id" : "1",
         "nume": "Pizza Capriciosa",
-        "img":"../public/assets/images/menu-modal/pizza-section/capriciosa.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/capriciosa.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, ciuperci, piept de pui, șuncă, roșii, măsline, oregano",
         "cantitate": 500,
@@ -11,7 +11,7 @@
     {
         "id" : "2",
         "nume": "Pizza Rucola",
-        "img":"../public/assets/images/menu-modal/pizza-section/rucola.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/rucola.jpg",
         "pret": 105,
         "descriere": "Blat pizza, sos roșii, mozzarella, rucola, parmezan, roșii uscate, prosciutto crudo, oregano",
         "cantitate": 500,
@@ -20,7 +20,7 @@
     {
         "id" : "3",
         "nume": "Pizza Quattro Stagioni",
-        "img":"../public/assets/images/menu-modal/pizza-section/quattro_stagioni.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/quattro_stagioni.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, măsline, ciuperci, brocoli, piept de pui, oregano",
         "cantitate": 500,
@@ -29,7 +29,7 @@
     {
         "id" : "4",
         "nume": "Pizza Funghi",
-        "img":"../public/assets/images/menu-modal/pizza-section/funghi.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/funghi.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, măsline, ciuperci, oregano",
         "cantitate": 500,
@@ -38,7 +38,7 @@
     {
         "id" : "5",
         "nume": "Pizza Quattro Carne",
-        "img":"../public/assets/images/menu-modal/pizza-section/quattro_carne.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/quattro_carne.jpg",
         "pret": 110,
         "descriere": "Blat pizza, sos pizza, mozzarella, șuncă, salam, bacon, piept de pui, oregano",
         "cantitate": 500,
@@ -47,7 +47,7 @@
     {
         "id" : "6",
         "nume": "Pizza Vegetariană",
-        "img":"../public/assets/images/menu-modal/pizza-section/vegetariana.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/vegetariana.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, ciuperci, roșii, ardei gras, vânătă, zucchini, oregano",
         "cantitate": 500,
@@ -56,7 +56,7 @@
     {
         "id" : "7",
         "nume": "Pizza Quattro Formage",
-        "img":"../public/assets/images/menu-modal/pizza-section/quatro_formage.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/quatro_formage.jpg",
         "pret": 115,
         "descriere": "Blat pizza, sos pizza, mozzarella, parmezan, gorgonzola, maasdam, oregano",
         "cantitate": 500,
@@ -65,7 +65,7 @@
     {
         "id" : "8",
         "nume": "Pizza Diabola",
-        "img":"../public/assets/images/menu-modal/pizza-section/diabola.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/diabola.jpg",
         "pret": 105,
         "descriere": "Blat pizza, sos pizza, mozzarella, salam picant, ardei gras, chilli, oregano",
         "cantitate": 500,
@@ -74,7 +74,7 @@
     {
         "id" : "9",
         "nume": "Pizza Hawaii",
-        "img":"../public/assets/images/menu-modal/pizza-section/hawaii.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/hawaii.jpg",
         "pret": 95,
         "descriere": "Blat pizza, sos pizza, mozzarella, ananas, piept de pui, oregano",
         "cantitate": 500,
@@ -83,7 +83,7 @@
     {
         "id" : "10",
         "nume": "Pizza Focaccia",
-        "img":"../public/assets/images/menu-modal/pizza-section/focaccia.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/focaccia.jpg",
         "pret": 40,
         "descriere": "Blat pizza, oregano, ulei de măsline",
         "cantitate": 250,
@@ -92,7 +92,7 @@
     {
         "id" : "11",
         "nume": "Pizza Metropolis",
-        "img":"../public/assets/images/menu-modal/pizza-section/metropolis.jpg",
+        "img":"/public/assets/images/menu-modal/pizza-section/metropolis.jpg",
         "pret": 115,
         "descriere": "Blat pizza, sos pizza, mozzarella, măsline, ciuperci, șuncă, carciofi, roșii, oregano",
         "cantitate": 500,
@@ -101,7 +101,7 @@
     {
         "id" : "12",
         "nume": "Borș roșu",
-        "img":"../public/assets/images/menu-modal/felul-section/bors.jpg",
+        "img":"/public/assets/images/menu-modal/felul-section/bors.jpg",
         "pret": 50,
         "descriere": "Bulion, costiță de porc, legume, verdeață, smântână, ardei",
         "cantitate": 350,
@@ -110,7 +110,7 @@
     {
         "id" : "13",
         "nume": "Soleancă",
-        "img":"../public/assets/images/menu-modal/felul-section/soleanca.jpg",
+        "img":"/public/assets/images/menu-modal/felul-section/soleanca.jpg",
         "pret": 55,
         "descriere": "Salam, becon, șuncă, ciuperci, măsline, castraveți murați, pastă de tomate, ardei, verdeață",
         "cantitate": 350,
@@ -119,7 +119,7 @@
     {
         "id" : "14",
         "nume": "Zeamă",
-        "img":"../public/assets/images/menu-modal/felul-section/zeama.jpg",
+        "img":"/public/assets/images/menu-modal/felul-section/zeama.jpg",
         "pret": 45,
         "descriere": "Bulion, carne de găină, legume, tăieței, smântână, ardei, verdeață, ardei",
         "cantitate": 350,
@@ -128,7 +128,7 @@
     {
         "id" : "15",
         "nume": "Supă de ciuperci cu pui",
-        "img":"../public/assets/images/menu-modal/felul-section/supa_ciuperci.jpg",
+        "img":"/public/assets/images/menu-modal/felul-section/supa_ciuperci.jpg",
         "pret": 45,
         "descriere": "Piept de pui, ciuperci, pesmeți, frișcă de bucătărie, parmezan",
         "cantitate": 350,
@@ -137,7 +137,7 @@
     {
         "id" : "16",
         "nume": "Omletă cu șuncă și cașcaval",
-        "img":"../public/assets/images/menu-modal/dejun-section/omleta_sunca.jpg",
+        "img":"/public/assets/images/menu-modal/dejun-section/omleta_sunca.jpg",
         "pret": 40,
         "descriere": "3 ouă, șuncă, cașcaval",
         "cantitate": 150,
@@ -146,7 +146,7 @@
     {
         "id" : "17",
         "nume": "Omletă cu legume și cașcaval",
-        "img":"../public/assets/images/menu-modal/dejun-section/omleta_legume.jpg",
+        "img":"/public/assets/images/menu-modal/dejun-section/omleta_legume.jpg",
         "pret": 40,
         "descriere": "3 ouă, legume, cașcaval",
         "cantitate": 150,
@@ -155,7 +155,7 @@
     {
         "id" : "18",
         "nume": "Ochiuri de ou",
-        "img":"../public/assets/images/menu-modal/dejun-section/ochiuri.jpg",
+        "img":"/public/assets/images/menu-modal/dejun-section/ochiuri.jpg",
         "pret": 45,
         "descriere": "Ou, pâine toast, salată mixt, beacon",
         "cantitate": 150,
@@ -164,7 +164,7 @@
     {
         "id" : "19",
         "nume": "Clătite cu topping",
-        "img":"../public/assets/images/menu-modal/dejun-section/clatite.jpg",
+        "img":"/public/assets/images/menu-modal/dejun-section/clatite.jpg",
         "pret": 40,
         "descriere": "Clătite, topping asortiment",
         "cantitate": 30,
@@ -173,7 +173,7 @@
     {
         "id" : "20",
         "nume": "Clătite cu brânză de vaci",
-        "img":"../public/assets/images/menu-modal/dejun-section/clatite_cu_branza.jpg",
+        "img":"/public/assets/images/menu-modal/dejun-section/clatite_cu_branza.jpg",
         "pret": 45,
         "descriere": "Clătite, brânză de vaci, stafide",
         "cantitate": 100,
@@ -182,7 +182,7 @@
     {
         "id" : "21",
         "nume": "Salată Caesar cu pui",
-        "img":"../public/assets/images/menu-modal/salate-section/caesar.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/caesar.jpg",
         "pret": 70,
         "descriere": "Lola, piept de pui, pesmeți, roșii, sos Caesar, parmezan, ouă de prepeliță",
         "cantitate": 300,
@@ -191,7 +191,7 @@
     {
         "id" : "22",
         "nume": "Salată Caesar cu creveți",
-        "img":"../public/assets/images/menu-modal/salate-section/caesar_creveti.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/caesar_creveti.jpg",
         "pret": 95,
         "descriere": "Lola, creveți, pesmeți, roșii, sos Caesar, parmezan",
         "cantitate": 300,
@@ -200,7 +200,7 @@
     {
         "id" : "23",
         "nume": "Salată caldă cu pui",
-        "img":"../public/assets/images/menu-modal/salate-section/salata_calda.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/salata_calda.jpg",
         "pret": 80,
         "descriere": "Lola, dovlecei, vinete, ciuperci, ardei gras, morcov, roșii, susan, brocoli",
         "cantitate": 350,
@@ -209,7 +209,7 @@
     {
         "id" : "24",
         "nume": "Salată Grecească",
-        "img":"../public/assets/images/menu-modal/salate-section/greceasca.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/greceasca.jpg",
         "pret": 45,
         "descriere": "Roșii, castraveți, ardei gras, măsline, brânză bulgărească, ceapă",
         "cantitate": 300,
@@ -218,7 +218,7 @@
     {
         "id" : "25",
         "nume": "Salată Provinnce",
-        "img":"../public/assets/images/menu-modal/salate-section/province_salad.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/province_salad.jpg",
         "pret": 65,
         "descriere": "Lola, piept de pui, roșii, castraveți, ardei gras, sos Caesar, parmezan, ouă de prepeliță",
         "cantitate": 300,
@@ -227,7 +227,7 @@
     {
         "id" : "26",
         "nume": "Salată Vegetariană",
-        "img":"../public/assets/images/menu-modal/salate-section/vegetarian_salad.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/vegetarian_salad.jpg",
         "pret": 85,
         "descriere": "Ceapă roșie, ardei gras, porumb dulce, avocado, morcov, fasole",
         "cantitate": 400,
@@ -236,7 +236,7 @@
     {
         "id" : "27",
         "nume": "Salată Rucola",
-        "img":"../public/assets/images/menu-modal/salate-section/rucola_salad.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/rucola_salad.jpg",
         "pret": 50,
         "descriere": "Rucola, roșii uscate, brânză de vaci, miez de nucă",
         "cantitate": 250,
@@ -245,7 +245,7 @@
     {
         "id" : "28",
         "nume": "Salată con tono",
-        "img":"../public/assets/images/menu-modal/salate-section/ton_salad.jpg",
+        "img":"/public/assets/images/menu-modal/salate-section/ton_salad.jpg",
         "pret": 85,
         "descriere": "Lola,roșii, ton, porumb, ardei gras, măsline, ceapă roșie",
         "cantitate": 300,
@@ -254,7 +254,7 @@
     {
         "id" : "29",
         "nume": "Miel înăbușit cu legume",
-        "img":"../public/assets/images/menu-modal/platou-section/miel_legume.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/miel_legume.jpg",
         "pret": 450,
         "descriere": "4h pentru preparare",
         "cantitate": 1500,
@@ -263,7 +263,7 @@
     {
         "id" : "30",
         "nume": "Mix grill",
-        "img":"../public/assets/images/menu-modal/platou-section/mixgrill.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/mixgrill.jpg",
         "pret": 400,
         "descriere": "Steak de pui, steak de porc, cârnăciori de pui, cârnăciori de porc, ciuperci, ardei gras, vânătă, dovlecei, roșii, rădăcină de țelină, verdeață, crem balsamic, susan",
         "cantitate": 1500,
@@ -272,7 +272,7 @@
     {
         "id" : "31",
         "nume": "Platou cu cașcaval",
-        "img":"../public/assets/images/menu-modal/platou-section/platou_cu_cascaval.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/platou_cu_cascaval.jpg",
         "pret": 250,
         "descriere": "Parmezan, brie, edam, gorgonzola, miere de albini, miez de nucă",
         "cantitate": 460,
@@ -281,7 +281,7 @@
     {
         "id" : "32",
         "nume": "Platou cu legume",
-        "img":"../public/assets/images/menu-modal/platou-section/platou_de_legume.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/platou_de_legume.jpg",
         "pret": 120,
         "descriere": "Roșii, castraveți, ardei gras, brânză, măsline, ceapă marinată",
         "cantitate": 450,
@@ -290,7 +290,7 @@
     {
         "id" : "33",
         "nume": "Platou cu mezeluri",
-        "img":"../public/assets/images/menu-modal/platou-section/platou_de_mezeluri.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/platou_de_mezeluri.jpg",
         "pret": 150,
         "descriere": "Beacon, șuncă, salam, măsline, verdeață",
         "cantitate": 425,
@@ -299,7 +299,7 @@
     {
         "id" : "34",
         "nume": "Platou cu fructe",
-        "img":"../public/assets/images/menu-modal/platou-section/platou_de_fructe.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/platou_de_fructe.jpg",
         "pret": 150,
         "descriere": "Portocale, banana, kiwi, mere, struguri, grapefruit",
         "cantitate": 600,
@@ -308,7 +308,7 @@
     {
         "id" : "35",
         "nume": "Platou cu murături",
-        "img":"../public/assets/images/menu-modal/platou-section/platou_muraturi.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/platou_muraturi.jpg",
         "pret": 110,
         "descriere": "Castraveți murați, roșii murate, harbuz murat",
         "cantitate": 600,
@@ -317,7 +317,7 @@
     {
         "id" : "36",
         "nume": "Gustări la vodkă",
-        "img":"../public/assets/images/menu-modal/platou-section/platou_vodka.jpg",
+        "img":"/public/assets/images/menu-modal/platou-section/platou_vodka.jpg",
         "pret": 150,
         "descriere": "Slănină, castraveți murați, beacon, muștar, usturoi, ceapă verde, pâine neagră toast",
         "cantitate": 240,
@@ -326,7 +326,7 @@
     {
         "id" : "37",
         "nume": "Cartofi cu rozmarin",
-        "img":"../public/assets/images/menu-modal/garnituri-section/rozmarin.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/rozmarin.jpg",
         "pret": 40,
         "descriere": "cartofi, condimente",
         "cantitate": 230,
@@ -335,7 +335,7 @@
     {
         "id" : "38",
         "nume": "Legume la grătar",
-        "img":"../public/assets/images/menu-modal/garnituri-section/legume_la_gratar.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/legume_la_gratar.jpg",
         "pret": 55,
         "descriere": "Ciuperci, ardei gras, vânătă, dovlecei, roșii, rădăcină de țelină, verdeață, crem balsamic, susan",
         "cantitate": 400,
@@ -344,7 +344,7 @@
     {
         "id" : "39",
         "nume": "Cartofi cu cașcaval",
-        "img":"../public/assets/images/menu-modal/garnituri-section/cartofi_cascaval.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/cartofi_cascaval.jpg",
         "pret": 45,
         "descriere": "Cartofi, parmezan, mozzarella",
         "cantitate": 310,
@@ -353,7 +353,7 @@
     {
         "id" : "40",
         "nume": "Mămăliga cu brânză și smântână",
-        "img":"../public/assets/images/menu-modal/garnituri-section/mamaliga.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/mamaliga.jpg",
         "pret": 45,
         "descriere": "Mămăligă brânză, smântână, ochiuri, verdeață",
         "cantitate": 260,
@@ -362,7 +362,7 @@
     {
         "id" : "41",
         "nume": "Legume sotate",
-        "img":"../public/assets/images/menu-modal/garnituri-section/legume_sotate.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/legume_sotate.jpg",
         "pret": 75,
         "descriere": "Porumb, brocoli, ardei gras, morcov, păstări, coiperci, unt, susan",
         "cantitate": 450,
@@ -371,7 +371,7 @@
     {
         "id" : "42",
         "nume": "Asorti de cartofi",
-        "img":"../public/assets/images/menu-modal/garnituri-section/cartofi_asorti.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/cartofi_asorti.jpg",
         "pret": 65,
         "descriere": "Cartofi pai, cartofi cu rozmarin, noisette",
         "cantitate": 480,
@@ -380,7 +380,7 @@
     {
         "id" : "43",
         "nume": "Cartofi fri",
-        "img":"../public/assets/images/menu-modal/garnituri-section/cartofi_pai.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/cartofi_pai.jpg",
         "pret": 30,
         "descriere": "Cartofi pai",
         "cantitate": 200,
@@ -389,7 +389,7 @@
     {
         "id" : "44",
         "nume": "Pireu de cartofi",
-        "img":"../public/assets/images/menu-modal/garnituri-section/pireu.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/pireu.jpg",
         "pret": 35,
         "descriere": "pireu de cartofi",
         "cantitate": 250,
@@ -398,7 +398,7 @@
     {
         "id" : "45",
         "nume": "Orez cu legume",
-        "img":"../public/assets/images/menu-modal/garnituri-section/orez.jpg",
+        "img":"/public/assets/images/menu-modal/garnituri-section/orez.jpg",
         "pret": 50,
         "descriere": "Orez, legume, condimente",
         "cantitate": 350,
@@ -407,7 +407,7 @@
     {
         "id" : "46",
         "nume": "Steak de pui",
-        "img":"../public/assets/images/menu-modal/carne-section/steak_pui.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/steak_pui.jpg",
         "pret": 75,
         "descriere": "piept de pui, legume",
         "cantitate": 310,
@@ -416,7 +416,7 @@
     {
         "id" : "47",
         "nume": "Tocăniță de pui cu mămăligă",
-        "img":"../public/assets/images/menu-modal/carne-section/tocana_pui.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/tocana_pui.jpg",
         "pret": 105,
         "descriere": "Carne de pui, mămăligă, brânză, smântână, ou, verdeață",
         "cantitate": 510,
@@ -425,7 +425,7 @@
     {
         "id" : "48",
         "nume": "Aripioare fri",
-        "img":"../public/assets/images/menu-modal/carne-section/aripioare.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/aripioare.jpg",
         "pret": 70,
         "descriere": "Aripioare de pui, sos",
         "cantitate": 310,
@@ -434,7 +434,7 @@
     {
         "id" : "49",
         "nume": "Frigărui de pui",
-        "img":"../public/assets/images/menu-modal/carne-section/frigarui_pui.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/frigarui_pui.jpg",
         "pret": 85,
         "descriere": "Piept de pui, legume, condimente",
         "cantitate": 360,
@@ -443,7 +443,7 @@
     {
         "id" : "50",
         "nume": "Pui picant",
-        "img":"../public/assets/images/menu-modal/carne-section/pui_picant.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/pui_picant.jpg",
         "pret": 95,
         "descriere": "Fileu de pui, fasole, porumb, sos de roșii, ardei iute, ardei gras, verdeață",
         "cantitate": 400,
@@ -452,7 +452,7 @@
     {
         "id" : "51",
         "nume": "Costiță de porc la grătar",
-        "img":"../public/assets/images/menu-modal/carne-section/costita_pork.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/costita_pork.jpg",
         "pret": 180,
         "descriere": "costiță de porc, condimente",
         "cantitate": 530,
@@ -461,7 +461,7 @@
     {
         "id" : "52",
         "nume": "Tocană de porc cu mămăligă",
-        "img":"../public/assets/images/menu-modal/carne-section/tocana_porc.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/tocana_porc.jpg",
         "pret": 105,
         "descriere": "Carne de porc, mămăligă, brânză, smântână, ou, verdeață",
         "cantitate": 510,
@@ -470,7 +470,7 @@
     {
         "id" : "53",
         "nume": "Mușchiuleț de porc copt în sos de vișine",
-        "img":"../public/assets/images/menu-modal/carne-section/muschiulet_visina.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/muschiulet_visina.jpg",
         "pret": 180,
         "descriere": "Piept de pui, legume, condimente",
         "cantitate": 450,
@@ -479,7 +479,7 @@
     {
         "id" : "54",
         "nume": "Mușchiuleț de porc cu legume la grătar",
-        "img":"../public/assets/images/menu-modal/carne-section/muschiulet_porc.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/muschiulet_porc.jpg",
         "pret": 180,
         "descriere": "Piept de pui, legume, condimente",
         "cantitate": 450,
@@ -488,7 +488,7 @@
     {
         "id" : "55",
         "nume": "Somon cu legume la grătar",
-        "img":"../public/assets/images/menu-modal/carne-section/somon_legume.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/somon_legume.jpg",
         "pret": 165,
         "descriere": "Somon, legume, susan",
         "cantitate": 530,
@@ -497,7 +497,7 @@
     {
         "id" : "56",
         "nume": "Somon cu lămâie",
-        "img":"../public/assets/images/menu-modal/carne-section/somon_lamaie.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/somon_lamaie.jpg",
         "pret": 125,
         "descriere": "Somon, lămâie, salată",
         "cantitate": 400,
@@ -506,7 +506,7 @@
     {
         "id" : "57",
         "nume": "Dorado la grătar",
-        "img":"../public/assets/images/menu-modal/carne-section/dorado.jpg",
+        "img":"/public/assets/images/menu-modal/carne-section/dorado.jpg",
         "pret": 95,
         "descriere": "Dorado, lămâie, condimente",
         "cantitate": 400,
@@ -515,7 +515,7 @@
     {
         "id" : "58",
         "nume": "Carbonara",
-        "img":"../public/assets/images/menu-modal/paste-section/carbonara.jpg",
+        "img":"/public/assets/images/menu-modal/paste-section/carbonara.jpg",
         "pret": 70,
         "descriere": "Spaghete, beacon, frișcă de bucătărie, parmezan, ou, usturoi",
         "cantitate": 350,
@@ -524,7 +524,7 @@
     {
         "id" : "59",
         "nume": "Fettuccine de pui și ciuperci",
-        "img":"../public/assets/images/menu-modal/paste-section/fettuccine.jpg",
+        "img":"/public/assets/images/menu-modal/paste-section/fettuccine.jpg",
         "pret": 70,
         "descriere": "Paste Fettuccine, carne de pui, ciuperci, frișcă de bucătărie, vin alb, parmezan",
         "cantitate": 350,
@@ -533,7 +533,7 @@
     {
         "id" : "60",
         "nume": "Spaghette con tonno",
-        "img":"../public/assets/images/menu-modal/paste-section/spaghette_ton.jpg",
+        "img":"/public/assets/images/menu-modal/paste-section/spaghette_ton.jpg",
         "pret": 80,
         "descriere": "Spaghete, ton, roșii, verdeață",
         "cantitate": 300,
@@ -542,7 +542,7 @@
     {
         "id" : "61",
         "nume": "Spaghette negre cu creveți",
-        "img":"../public/assets/images/menu-modal/paste-section/spaghette.jpg",
+        "img":"/public/assets/images/menu-modal/paste-section/spaghette.jpg",
         "pret": 95,
         "descriere": "Spaghete negre, creveți, verdeață",
         "cantitate": 350,
@@ -551,7 +551,7 @@
     {
         "id" : "62",
         "nume": "Pancakes",
-        "img":"../public/assets/images/menu-modal/desert-section/pancake.jpg",
+        "img":"/public/assets/images/menu-modal/desert-section/pancake.jpg",
         "pret": 50,
         "descriere": "clătite, gem fructe de pădure, înghețată",
         "cantitate": 300,
@@ -560,7 +560,7 @@
     {
         "id" : "63",
         "nume": "Cheesecake",
-        "img":"../public/assets/images/menu-modal/desert-section/cheesecake.jpg",
+        "img":"/public/assets/images/menu-modal/desert-section/cheesecake.jpg",
         "pret": 60,
         "descriere": "Budincă de brânză, blat",
         "cantitate": 150,
@@ -569,7 +569,7 @@
     {
         "id" : "64",
         "nume": "Tiramisu",
-        "img":"../public/assets/images/menu-modal/desert-section/tiramisu.jpg",
+        "img":"/public/assets/images/menu-modal/desert-section/tiramisu.jpg",
         "pret": 50,
         "descriere": "blat cu cafea, mascarpone, ciocolată",
         "cantitate": 150,
@@ -578,7 +578,7 @@
     {
         "id" : "65",
         "nume": "Salată de fructe",
-        "img":"../public/assets/images/menu-modal/desert-section/salata_fructe.jpg",
+        "img":"/public/assets/images/menu-modal/desert-section/salata_fructe.jpg",
         "pret": 55,
         "descriere": "Căpșuni, kiwi, ananas, măr, gem coacăză, frișcă",
         "cantitate": 350,
@@ -587,7 +587,7 @@
     {
         "id" : "66",
         "nume": "Înghețată Betty Ice",
-        "img":"../public/assets/images/menu-modal/desert-section/inghetata.jpg",
+        "img":"/public/assets/images/menu-modal/desert-section/inghetata.jpg",
         "pret": 60,
         "descriere": "Vanilie/ciocolată/caramel/căpșuni/zmeură",
         "cantitate": 150,
@@ -596,7 +596,7 @@
     {
         "id" : "67",
         "nume": "Înghețată cu topping în asortiment",
-        "img":"../public/assets/images/menu-modal/desert-section/inghetata_gem.jpg",
+        "img":"/public/assets/images/menu-modal/desert-section/inghetata_gem.jpg",
         "pret": 45,
         "descriere": "Vanilie/ciocolată/caramel/căpșuni/zmeură",
         "cantitate": 150,
@@ -605,7 +605,7 @@
     {
         "id" : "68",
         "nume": "Petroșel",
-        "img":"../public/assets/images/menu-modal/gustari-bere-section/petrosel.png",
+        "img":"/public/assets/images/menu-modal/gustari-bere-section/petrosel.png",
         "pret": 45,
         "descriere": "Pești, lămâie",
         "cantitate": 130,
@@ -614,7 +614,7 @@
     {
         "id" : "69",
         "nume": "Creveți la bere",
-        "img":"../public/assets/images/menu-modal/gustari-bere-section/creveti.jpg",
+        "img":"/public/assets/images/menu-modal/gustari-bere-section/creveti.jpg",
         "pret": 150,
         "descriere": "Creveți",
         "cantitate": 300,
@@ -623,7 +623,7 @@
     {
         "id" : "70",
         "nume": "Platou la bere",
-        "img":"../public/assets/images/menu-modal/gustari-bere-section/platou_bere.jpg",
+        "img":"/public/assets/images/menu-modal/gustari-bere-section/platou_bere.jpg",
         "pret": 190,
         "descriere": "Petroșel, carpaccio de porc, urechiușe de porc, calamari fri (8 inele)",
         "cantitate": 350,
@@ -632,7 +632,7 @@
     {
         "id" : "71",
         "nume": "Urechiușe afumate",
-        "img":"../public/assets/images/menu-modal/gustari-bere-section/urechi.jpg",
+        "img":"/public/assets/images/menu-modal/gustari-bere-section/urechi.jpg",
         "pret": 50,
         "descriere": "Urechi de porc",
         "cantitate": 100,
@@ -641,7 +641,7 @@
     {
         "id" : "72",
         "nume": "Calamari fri",
-        "img":"../public/assets/images/menu-modal/gustari-bere-section/calamar.jpg",
+        "img":"/public/assets/images/menu-modal/gustari-bere-section/calamar.jpg",
         "pret": 55,
         "descriere": "8 inele",
         "cantitate": 50,
@@ -650,7 +650,7 @@
     {
         "id" : "73",
         "nume": "Carpaccio de porc",
-        "img":"../public/assets/images/menu-modal/gustari-bere-section/carpacio.jpg",
+        "img":"/public/assets/images/menu-modal/gustari-bere-section/carpacio.jpg",
         "pret": 55,
         "descriere": "Carpaccio de porc",
         "cantitate": 100,
@@ -659,7 +659,7 @@
     {
         "id" : "74",
         "nume": "Ciocolată fierbinte albă/neagră",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/ciocolata.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/ciocolata.jpg",
         "pret": 40,
         "descriere": "Ciocolată fierbinte albă/neagră",
         "cantitate": 180,
@@ -668,7 +668,7 @@
     {
         "id" : "75",
         "nume": "Cappucciono cu caramel",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/cappuccino.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/cappuccino.jpg",
         "pret": 45,
         "descriere": "Cappucciono cu caramel",
         "cantitate": 180,
@@ -677,7 +677,7 @@
     {
         "id" : "76",
         "nume": "Ceai infuzie",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/ceai.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/ceai.jpg",
         "pret": 40,
         "descriere": "Negru, ierburi, mușețel, negru bergamot, verde, Jasmin, Tango Mango",
         "cantitate": 180,
@@ -686,7 +686,7 @@
     {
         "id" : "77",
         "nume": "Milkshake",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/milkshake.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/milkshake.jpg",
         "pret": 50,
         "descriere": "Banană/căpșună/kiwi/clasic/piersic",
         "cantitate": 400,
@@ -695,7 +695,7 @@
     {
         "id" : "78",
         "nume": "Fresh",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/fresh.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/fresh.jpg",
         "pret": 50,
         "descriere": "Portocală/lămâie/grapefruit/citrus mix",
         "cantitate": 250,
@@ -704,7 +704,7 @@
     {
         "id" : "79",
         "nume": "Mojito",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/mojito.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/mojito.jpg",
         "pret": 40,
         "descriere": "Sirop de mentă, sirop zahăr, lime, mentă, Sprite",
         "cantitate": 400,
@@ -713,7 +713,7 @@
     {
         "id" : "80",
         "nume": "Pina Colada",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/pinacolada.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/pinacolada.jpg",
         "pret": 40,
         "descriere": "Suc ananas, sirop de cocos, frișcă",
         "cantitate": 400,
@@ -722,7 +722,7 @@
     {
         "id" : "81",
         "nume": "Limonadă",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/limonada.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/limonada.jpg",
         "pret": 45,
         "descriere": "Măr/Cherry/Strawberry (sirop de zahăr,apă carbogazată, mentă, sirop măr/vișină/strawberry)",
         "cantitate": 500,
@@ -731,7 +731,7 @@
     {
         "id" : "82",
         "nume": "Cabriolet",
-        "img":"../public/assets/images/menu-modal/bauturi-nealcoolice-section/cabriolet.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-nealcoolice-section/cabriolet.jpg",
         "pret": 45,
         "descriere": "Sirop Blue Curacao, suc grapefruit, sirop de zahăr, lime, schweppes",
         "cantitate": 500,
@@ -740,7 +740,7 @@
     {
         "id" : "83",
         "nume": "Shoturi",
-        "img":"../public/assets/images/menu-modal/bauturi-alcoolice-section/shot.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-alcoolice-section/shot.jpg",
         "pret": 55,
         "descriere": "B-52/Hiroshima/Meduza/Green Mexian (Baileys, Tequila, Tunel, Blue Curacao)",
         "cantitate": 50,
@@ -749,7 +749,7 @@
     {
         "id" : "84",
         "nume": "Aperol",
-        "img":"../public/assets/images/menu-modal/bauturi-alcoolice-section/aperol.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-alcoolice-section/aperol.jpg",
         "pret": 60,
         "descriere": "Vin spumant, apă carbogazată",
         "cantitate": 250,
@@ -758,7 +758,7 @@
     {
         "id" : "85",
         "nume": "Mojito Clasic",
-        "img":"../public/assets/images/menu-modal/bauturi-alcoolice-section/mojito_clasic.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-alcoolice-section/mojito_clasic.jpg",
         "pret": 55,
         "descriere": "Rum, sirop mojito, sirop de zahăr, mentă, lime, sprite",
         "cantitate": 400,
@@ -767,7 +767,7 @@
     {
         "id" : "86",
         "nume": "Daiquiri",
-        "img":"../public/assets/images/menu-modal/bauturi-alcoolice-section/daiquiri.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-alcoolice-section/daiquiri.jpg",
         "pret": 55,
         "descriere": "Rum, dirop de zahăr, suc lime",
         "cantitate": 150,
@@ -776,7 +776,7 @@
     {
         "id" : "87",
         "nume": "Bere la sticlă",
-        "img":"../public/assets/images/menu-modal/bauturi-alcoolice-section/bere_sticla.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-alcoolice-section/bere_sticla.jpg",
         "pret": 40,
         "descriere": "Kozel/Radler/Efes/Timișoreana/Bavaria",
         "cantitate": 500,
@@ -785,7 +785,7 @@
     {
         "id" : "88",
         "nume": "Bere la halbă",
-        "img":"../public/assets/images/menu-modal/bauturi-alcoolice-section/bere_halba.jpg",
+        "img":"/public/assets/images/menu-modal/bauturi-alcoolice-section/bere_halba.jpg",
         "pret": 35,
         "descriere": "Metropolis/Kozel Brun/Efes/Neipa",
         "cantitate": 500,
