@@ -11,12 +11,15 @@ fetch("../../data/produse.json")
   .then((items) => {
     const categories = new Set(items.map((item) => item.categorie));
     const links = Array.from(categories).map((category) => {
+      const listItem = document.createElement("li");
+      listItem.classList.add("nav-item", "rounded", "px-2");
       const link = document.createElement("a");
       link.href = `#${category}`;
       link.textContent = category;
       link.classList.add("nav-link", "nav-menu-item");
       link.id = `category-${category}`;
-      return link;
+      listItem.appendChild(link);
+      return listItem;
     });
     const container = document.getElementById("category-links");
     links.forEach((link) => container.appendChild(link));
@@ -164,13 +167,16 @@ fetch("../../data/produse.json")
           0: {
             items: 1,
           },
-          800: {
+          576: {
+            items: 1,
+          },
+          768: {
             items: 2,
           },
-          1100: {
-            items: 2,
+          992: {
+            items: 4,
           },
-          1400: {
+          1200: {
             items: 4,
           },
         },
