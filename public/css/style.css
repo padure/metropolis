@@ -27,6 +27,66 @@ body {
   font-family: sans-serif;
 }
 
+.color-primary {
+  color: #fd9d0b;
+}
+
+/* For text */
+.font-base-light {
+  font-family: "Montserrat Light";
+}
+
+.font-base-regular {
+  font-family: "Montserrat Regular";
+}
+
+.font-second-regular {
+  font-family: "Oleo Script Regular";
+}
+
+.font-second-bold {
+  font-family: "Oleo Script Bold";
+}
+
+/* For background */
+.bg-cover {
+  background-size: cover;
+}
+
+.background-primary {
+  background-color: #fd9d0b !important;
+}
+
+.dvh-100 {
+  height: 100dvh;
+}
+
+.z-index-10 {
+  position: relative;
+  z-index: 10;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.radius-2 {
+  border-radius: 2rem !important;
+}
+
+.top-5 {
+  top: 10% !important;
+}
+
 .wrapper {
   background-image: url("../../public/assets/images/index/hero-bg.jpg");
   background-size: cover;
@@ -40,7 +100,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0.95));
+  background: linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0.9));
   z-index: 2;
 }
 .wrapper .bar {
@@ -142,58 +202,10 @@ input:checked + label {
   padding: 0 20px;
 }
 
-.color-primary {
-  color: #fd9d0b;
+.sidebar .nav-item:hover {
+  background-color: #495057;
 }
 
-/* For text */
-.font-base-light {
-  font-family: "Montserrat Light";
-}
-
-.font-base-regular {
-  font-family: "Montserrat Regular";
-}
-
-.font-second-regular {
-  font-family: "Oleo Script Regular";
-}
-
-.font-second-bold {
-  font-family: "Oleo Script Bold";
-}
-
-/* For background */
-.bg-cover {
-  background-size: cover;
-}
-
-.background-primary {
-  background-color: #fd9d0b !important;
-}
-
-.dvh-100 {
-  height: 100dvh;
-}
-
-.z-index-10 {
-  position: relative;
-  z-index: 10;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.grid-columns-2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.w-2 {
-  grid-column: span 2;
-}
-
-.radius-2 {
-  border-radius: 2rem !important;
+.sidebar .nav-item:hover a {
+  color: #fff !important;
 }/*# sourceMappingURL=style.css.map */
