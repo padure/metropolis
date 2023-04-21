@@ -99,8 +99,11 @@
     <!--Spinner end-->
 
     <!-- Back to top button -->
-    <button type="button" class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
-        <i class="fas fa-arrow-up"></i>
+    <button type="button"
+        class="btn btn-dark btn-lg rounded-circle position-fixed bottom-1 right-1 z-full border-warning d-none"
+        id="btn-back-to-top">
+        <!-- <i class="fas fa-arrow-up"></i> -->
+        <i class="fas fa-chevron-up"></i>
     </button>
 
     <!--Footer-->
@@ -209,29 +212,6 @@
     <script src="../../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="module" src="../../public/js/menu-modal.js"></script>
-    <script>
-        let mybutton = document.getElementById("btn-back-to-top");
-        window.onscroll = function () {
-            scrollFunction();
-        };
-
-        function scrollFunction() {
-            if (
-                document.body.scrollTop > 20 ||
-                document.documentElement.scrollTop > 20
-            ) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        mybutton.addEventListener("click", backToTop);
-
-        function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>
