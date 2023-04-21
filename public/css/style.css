@@ -212,7 +212,7 @@ input:checked + label {
 }
 
 .sidebar .nav-item:hover {
-  background-color: #495057;
+  border: 1px solid #ffc107;
 }
 
 .sidebar .nav-item:hover a {
