@@ -7,9 +7,21 @@ import ListItem from "./components/list-item.js";
 import CategoryCard from "./components/category-card.js";
 
 const productsCounter = document.querySelector("#items-count");
+const backToTop = document.querySelector("#btn-back-to-top");
 const categoriesContainer = document.querySelector("#category-links");
 const categoriesMobileContainer = document.querySelector("#mobile-categories");
-console.log(categoriesContainer);
+
+window.onscroll = () => {
+  window.scrollY > 50
+    ? backToTop.classList.remove("d-none")
+    : backToTop.classList.add("d-none");
+};
+const backTop = () => {
+  console.log("clicked");
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+backToTop.addEventListener("click", () => backTop());
 
 const getProducts = async () => {
   let response = await fetch("../../data/produse.json");
@@ -22,10 +34,8 @@ let products = await getProducts();
 const categories = new Set(products.map((product) => product.categorie));
 
 categories.forEach((category) => {
-  // let categoryHTML = ListItem(category);
   categoriesContainer.insertAdjacentHTML("beforeend", ListItem(category));
   const product = products.find((product) => product.categorie == category);
-  console.log(product.img);
 
   categoriesMobileContainer.insertAdjacentHTML(
     "beforeend",

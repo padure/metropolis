@@ -1,6 +1,7 @@
 .category-card {
   min-height: 70px;
   aspect-ratio: 16/9;
+  background-position: center;
 }
 .category-card::before {
   content: "";
@@ -11,7 +12,7 @@
   height: 100%;
   background-image: linear-gradient(
     to top,
-    rgba(17, 17, 17, 0.8),
+    rgba(17, 17, 17, 0.9),
     rgba(17, 17, 17, 0)
   );
   z-index: 1;
