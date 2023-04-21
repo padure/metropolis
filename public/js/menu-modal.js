@@ -3,28 +3,55 @@ import {
   updateLS,
   CART_PRODUCTS_KEY,
 } from "../js/helpers/storage-helper.js";
+import ListItem from "./components/list-item.js";
+import CategoryCard from "./components/category-card.js";
 
 const productsCounter = document.querySelector("#items-count");
+const categoriesContainer = document.querySelector("#category-links");
+const categoriesMobileContainer = document.querySelector("#mobile-categories");
+console.log(categoriesContainer);
 
-fetch("../../data/produse.json")
-  .then((response) => response.json())
-  .then((items) => {
-    const categories = new Set(items.map((item) => item.categorie));
-    const links = Array.from(categories).map((category) => {
-      const listItem = document.createElement("li");
-      listItem.classList.add("nav-item", "rounded", "px-2");
-      const link = document.createElement("a");
-      link.href = `#${category}`;
-      link.textContent = category;
-      link.classList.add("nav-link", "nav-menu-item");
-      link.id = `category-${category}`;
-      listItem.appendChild(link);
-      return listItem;
-    });
-    const container = document.getElementById("category-links");
-    links.forEach((link) => container.appendChild(link));
-  })
-  .catch((error) => console.error(error));
+const getProducts = async () => {
+  let response = await fetch("../../data/produse.json");
+  let data = response.json();
+
+  return data;
+};
+
+let products = await getProducts();
+const categories = new Set(products.map((product) => product.categorie));
+
+categories.forEach((category) => {
+  // let categoryHTML = ListItem(category);
+  categoriesContainer.insertAdjacentHTML("beforeend", ListItem(category));
+  const product = products.find((product) => product.categorie == category);
+  console.log(product.img);
+
+  categoriesMobileContainer.insertAdjacentHTML(
+    "beforeend",
+    CategoryCard(product)
+  );
+});
+
+// fetch("../../data/produse.json")
+//   .then((response) => response.json())
+//   .then((items) => {
+//     const categories = new Set(items.map((item) => item.categorie));
+//     const links = Array.from(categories).map((category) => {
+//       const listItem = document.createElement("li");
+//       listItem.classList.add("nav-item", "rounded", "px-2");
+//       const link = document.createElement("a");
+//       link.href = `#${category}`;
+//       link.textContent = category;
+//       link.classList.add("nav-link", "nav-menu-item");
+//       link.id = `category-${category}`;
+//       listItem.appendChild(link);
+//       return listItem;
+//     });
+//     const container = document.getElementById("category-links");
+//     links.forEach((link) => container.appendChild(link));
+//   })
+//   .catch((error) => console.error(error));
 
 //generating the category and the carousel for each category
 fetch("../../data/produse.json")
@@ -37,7 +64,7 @@ fetch("../../data/produse.json")
       const categoryContainer = document.createElement("div");
       categoryContainer.classList.add("container", "mt-80");
       const categorySection = document.createElement("div");
-      categorySection.id = category;
+      categorySection.id = category.toLowerCase();
       categorySection.classList.add("mt-3");
       let catSectClass = key === 0 ? "pt-1" : "pt-10";
       categorySection.classList.add(`${catSectClass}`);
