@@ -9,7 +9,7 @@ const Card = ({ nume, img, pret, cantitate }) => {
   });
 
   return `
-    <div class="card bg-dark text-white p-2" style="width: 16rem;">
+    <div class="card bg-dark text-white p-2 cursor-pointer" style="width: 16rem;">
             <div class="card-image" style="height: 300px; overflow: hidden;">
                 <img src="${img}" class="card-img-top rounded w-100 h-100 bg-cover" alt="${nume}">
             </div>
