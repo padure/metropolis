@@ -5,11 +5,13 @@ import {
 } from "../js/helpers/storage-helper.js";
 import ListItem from "./components/list-item.js";
 import CategoryCard from "./components/category-card.js";
+import Card from "./components/card.js";
 
 const productsCounter = document.querySelector("#items-count");
 const backToTop = document.querySelector("#btn-back-to-top");
 const categoriesContainer = document.querySelector("#category-links");
 const categoriesMobileContainer = document.querySelector("#mobile-categories");
+const carouselContainer = document.querySelector("#carousels");
 
 window.onscroll = () => {
   window.scrollY > 50
@@ -64,163 +66,229 @@ categories.forEach((category) => {
 //   .catch((error) => console.error(error));
 
 //generating the category and the carousel for each category
-fetch("../../data/produse.json")
-  .then((response) => response.json())
-  .then((items) => {
-    const categories = new Set(items.map((item) => item.categorie));
-    const container = document.getElementById("carousels");
+// fetch("../../data/produse.json")
+//   .then((response) => response.json())
+//   .then((items) => {
+//     const categories = new Set(items.map((item) => item.categorie));
+//     const container = document.getElementById("carousels");
 
-    [...categories].forEach((category, key) => {
-      const categoryContainer = document.createElement("div");
-      categoryContainer.classList.add("container", "mt-80");
-      const categorySection = document.createElement("div");
-      categorySection.id = category.toLowerCase();
-      categorySection.classList.add("mt-3");
-      let catSectClass = key === 0 ? "pt-1" : "pt-10";
-      categorySection.classList.add(`${catSectClass}`);
-      //generating the headings
-      const heading = document.createElement("h2");
-      heading.classList.add("category-title-carousel");
-      heading.textContent = category;
-      categorySection.appendChild(heading);
+//     [...categories].forEach((category, key) => {
+//       const categoryContainer = document.createElement("div");
+//       categoryContainer.classList.add("container", "mt-80");
+//       const categorySection = document.createElement("div");
+//       categorySection.id = category.toLowerCase();
+//       categorySection.classList.add("mt-3");
+//       let catSectClass = key === 0 ? "pt-1" : "pt-10";
+//       categorySection.classList.add(`${catSectClass}`);
+//       //generating the headings
+//       const heading = document.createElement("h2");
+//       heading.classList.add("category-title-carousel");
+//       heading.textContent = category;
+//       categorySection.appendChild(heading);
 
-      const hr = document.createElement("hr");
-      categorySection.appendChild(hr);
+//       const hr = document.createElement("hr");
+//       categorySection.appendChild(hr);
 
-      const cardContainer = document.createElement("div");
-      cardContainer.classList.add(
-        "row",
-        "owl-carousel",
-        "owl-theme",
-        "card-group"
-      );
+//       const cardContainer = document.createElement("div");
+//       cardContainer.classList.add(
+//         "row",
+//         "owl-carousel",
+//         "owl-theme",
+//         "card-group"
+//       );
 
-      //generating the items of carousel
-      items
-        .filter((item) => item.categorie === category)
-        .forEach((item) => {
-          const card = document.createElement("div");
-          card.classList.add("col-auto", "mx-0");
+//       //generating the items of carousel
+//       items
+//         .filter((item) => item.categorie === category)
+//         .forEach((item) => {
+//           const card = document.createElement("div");
+//           card.classList.add("col-auto", "mx-0");
 
-          const cardBody = document.createElement("div");
-          cardBody.classList.add("card", "mb-4", "bg-dark");
-          cardBody.setAttribute("data-bs-toggle", "modal");
-          cardBody.setAttribute("data-bs-target", `#product_view_${item.id}`);
+//           const cardBody = document.createElement("div");
+//           cardBody.classList.add("card", "mb-4", "bg-dark");
+//           cardBody.setAttribute("data-bs-toggle", "modal");
+//           cardBody.setAttribute("data-bs-target", `#product_view_${item.id}`);
 
-          const cardImage = document.createElement("img");
-          cardImage.classList.add("rounded-top", "card-image-menu");
-          cardImage.setAttribute("height", "320px");
-          cardImage.setAttribute("width", "230px");
-          cardImage.setAttribute("src", item.img);
-          cardBody.appendChild(cardImage);
+//           const cardImage = document.createElement("img");
+//           cardImage.classList.add("rounded-top", "card-image-menu");
+//           cardImage.setAttribute("height", "320px");
+//           cardImage.setAttribute("width", "230px");
+//           cardImage.setAttribute("src", item.img);
+//           cardBody.appendChild(cardImage);
 
-          const cardText = document.createElement("div");
-          cardText.classList.add("card-body", "p-3", "my-2");
+//           const cardText = document.createElement("div");
+//           cardText.classList.add("card-body", "p-3", "my-2");
 
-          const cardTitle = document.createElement("h5");
-          cardTitle.classList.add("my-2");
-          let title = "";
-          if (document.body.offsetWidth > 1100) {
-            title =
-              item.nume.length < 18
-                ? item.nume
-                : `${item.nume.substring(0, 12)} ...`;
-          } else {
-            title = item.nume;
-          }
-          cardTitle.textContent = `${title}`;
-          cardTitle.setAttribute("data-bs-toggle", "tooltip");
-          cardTitle.setAttribute("data-bs-placement", "top");
-          cardTitle.setAttribute("title", item.nume);
-          cardText.appendChild(cardTitle);
+//           const cardTitle = document.createElement("h5");
+//           cardTitle.classList.add("my-2");
+//           let title = "";
+//           if (document.body.offsetWidth > 1100) {
+//             title =
+//               item.nume.length < 18
+//                 ? item.nume
+//                 : `${item.nume.substring(0, 12)} ...`;
+//           } else {
+//             title = item.nume;
+//           }
+//           cardTitle.textContent = `${title}`;
+//           cardTitle.setAttribute("data-bs-toggle", "tooltip");
+//           cardTitle.setAttribute("data-bs-placement", "top");
+//           cardTitle.setAttribute("title", item.nume);
+//           cardText.appendChild(cardTitle);
 
-          const cardPrice = document.createElement("p");
-          cardPrice.classList.add("my-0", "mb-2");
-          cardPrice.textContent = item.pret + " mdl";
-          cardText.appendChild(cardPrice);
+//           const cardPrice = document.createElement("p");
+//           cardPrice.classList.add("my-0", "mb-2");
+//           cardPrice.textContent = item.pret + " mdl";
+//           cardText.appendChild(cardPrice);
 
-          const cardButton = document.createElement("div");
-          cardButton.classList.add(
-            "justify-content-between",
-            "align-items-center"
-          );
+//           const cardButton = document.createElement("div");
+//           cardButton.classList.add(
+//             "justify-content-between",
+//             "align-items-center"
+//           );
 
-          const buttonContainer = document.createElement("div");
-          buttonContainer.classList.add("px-2", "my-0");
+//           const buttonContainer = document.createElement("div");
+//           buttonContainer.classList.add("px-2", "my-0");
 
-          const orderButton = document.createElement("button");
-          orderButton.classList.add("btn", "btn-outline-secondary");
-          orderButton.setAttribute("type", "button");
-          orderButton.innerHTML =
-            '<b>Precomanda</b> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>';
-          buttonContainer.appendChild(orderButton);
+//           const orderButton = document.createElement("button");
+//           orderButton.classList.add("btn", "btn-outline-secondary");
+//           orderButton.setAttribute("type", "button");
+//           orderButton.innerHTML =
+//             '<b>Precomanda</b> <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>';
+//           buttonContainer.appendChild(orderButton);
 
-          cardButton.appendChild(buttonContainer);
-          cardText.appendChild(cardButton);
-          cardBody.appendChild(cardText);
-          card.appendChild(cardBody);
-          cardContainer.appendChild(card);
-          card.addEventListener("click", (e) => {
-            e.preventDefault();
-            const modal_view_product = document.querySelector(".my-modal-s");
-            const modalContentTest = new bootstrap.Modal(modal_view_product);
+//           cardButton.appendChild(buttonContainer);
+//           cardText.appendChild(cardButton);
+//           cardBody.appendChild(cardText);
+//           card.appendChild(cardBody);
+//           cardContainer.appendChild(card);
+//           card.addEventListener("click", (e) => {
+//             e.preventDefault();
+//             const modal_view_product = document.querySelector(".my-modal-s");
+//             const modalContentTest = new bootstrap.Modal(modal_view_product);
 
-            const modal_image = document.getElementById("product-image");
-            const modal_title = document.getElementById("product-title");
-            const modal_description = document.getElementById(
-              "product-description"
-            );
-            const modal_weight = document.getElementById("product-weight");
-            const modal_price = document.getElementById("product-price");
-            const modal_add_to_cart_id =
-              document.getElementById("add-to-cart-button");
+//             const modal_image = document.getElementById("product-image");
+//             const modal_title = document.getElementById("product-title");
+//             const modal_description = document.getElementById(
+//               "product-description"
+//             );
+//             const modal_weight = document.getElementById("product-weight");
+//             const modal_price = document.getElementById("product-price");
+//             const modal_add_to_cart_id =
+//               document.getElementById("add-to-cart-button");
 
-            modal_image.src = item.img;
-            modal_title.textContent = item.nume;
-            modal_description.textContent = item.descriere;
-            modal_weight.textContent = `${item.cantitate} g`;
-            modal_price.textContent = `${item.pret} mdl`;
-            modal_add_to_cart_id.setAttribute("data-md-id", item?.id);
+//             modal_image.src = item.img;
+//             modal_title.textContent = item.nume;
+//             modal_description.textContent = item.descriere;
+//             modal_weight.textContent = `${item.cantitate} g`;
+//             modal_price.textContent = `${item.pret} mdl`;
+//             modal_add_to_cart_id.setAttribute("data-md-id", item?.id);
 
-            modalContentTest.show();
-          });
-        });
+//             modalContentTest.show();
+//           });
+//         });
 
-      categoryContainer.appendChild(categorySection);
-      categoryContainer.appendChild(cardContainer);
-      container.appendChild(categoryContainer);
+//       categoryContainer.appendChild(categorySection);
+//       categoryContainer.appendChild(cardContainer);
+//       container.appendChild(categoryContainer);
 
-      //owlCarousel for cards
-      $(`.owl-carousel`).owlCarousel({
-        loop: false,
-        margin: 10,
-        nav: true,
-        dots: false,
-        navText: [
-          '<span class="fas fa-angle-left fa-lg"></span>',
-          '<span class="fas fa-angle-right fa-lg"></span>',
-        ],
-        responsive: {
-          0: {
-            items: 1,
-          },
-          576: {
-            items: 1,
-          },
-          768: {
-            items: 2,
-          },
-          992: {
-            items: 4,
-          },
-          1200: {
-            items: 4,
-          },
-        },
-      });
+//       //owlCarousel for cards
+//       $(`.owl-carousel`).owlCarousel({
+//         loop: false,
+//         margin: 10,
+//         nav: true,
+//         dots: false,
+//         navText: [
+//           '<span class="fas fa-angle-left fa-lg"></span>',
+//           '<span class="fas fa-angle-right fa-lg"></span>',
+//         ],
+//         responsive: {
+//           0: {
+//             items: 1,
+//           },
+//           576: {
+//             items: 1,
+//           },
+//           768: {
+//             items: 2,
+//           },
+//           992: {
+//             items: 4,
+//           },
+//           1200: {
+//             items: 4,
+//           },
+//         },
+//       });
+//     });
+//   })
+//   .catch((error) => console.error(error));
+
+const priceFormatter = Intl.NumberFormat("ro", {
+  style: "currency",
+  currency: "MDL",
+});
+const quantityFormatter = Intl.NumberFormat("ro", {
+  style: "unit",
+  unit: "gram",
+});
+
+categories.forEach((category) => {
+  const categoryContainer = document.createElement("div");
+  categoryContainer.classList.add("container");
+
+  const categoryHeader = document.createElement("div");
+  categoryHeader.id = category.toLowerCase();
+  categoryHeader.classList.add("py-1", "my-3", "border-bottom");
+
+  const categoryTitle = document.createElement("h1");
+  categoryTitle.textContent = category;
+  categoryTitle.classList.add("font-second-bold", "display-5");
+
+  const slider = document.createElement("div");
+  slider.classList.add("row", "owl-carousel", "owl-theme", "card-group");
+
+  products
+    .filter((product) => product.categorie == category)
+    .forEach((product) => {
+      slider.insertAdjacentHTML("beforeend", Card(product));
     });
-  })
-  .catch((error) => console.error(error));
+
+  categoryHeader.appendChild(categoryTitle);
+  categoryContainer.appendChild(categoryHeader);
+  categoryContainer.appendChild(slider);
+  carouselContainer.appendChild(categoryContainer);
+});
+
+$(`.owl-carousel`).owlCarousel({
+  loop: true,
+  margin: 5,
+  nav: true,
+  dots: false,
+  autoWidth: true,
+  navText: [
+    '<span class="fas fa-angle-left fa-lg"></span>',
+    '<span class="fas fa-angle-right fa-lg"></span>',
+  ],
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    576: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    992: {
+      items: 3,
+    },
+    1200: {
+      items: 3,
+    },
+  },
+});
 
 function fetchData() {
   const spinner = document.getElementById("bg-spinner");

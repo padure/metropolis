@@ -8,4 +8,9 @@ const updateLS = (key, values) => {
 
 const CART_PRODUCTS_KEY = "cart-products";
 
+
+const useLocalStorage = (key) => {
+  
+}
+
 export { getProductsFromLS, updateLS, CART_PRODUCTS_KEY };
