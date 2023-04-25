@@ -16,6 +16,9 @@
 .font-second-bold {
   font-family: variables.$second-font-bold;
 }
+.fs-7 {
+  font-size: 0.8rem;
+}
 
 /* For background */
 .bg-cover {
@@ -24,6 +27,10 @@
 .background-primary {
   background-color: #fd9d0b !important;
 }
+.bg-darker {
+  background-color: rgba($color: #1b1a1b, $alpha: 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+}
 
 .dvh-100 {
   height: 100dvh;
@@ -31,6 +38,9 @@
 .z-index-10 {
   position: relative;
   z-index: 10;
+}
+.z-1000 {
+  z-index: 1000;
 }
 .grid {
   display: grid;
@@ -64,4 +74,12 @@
 }
 .z-full {
   z-index: 1000;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.object-cover {
+  object-fit: cover;
 }

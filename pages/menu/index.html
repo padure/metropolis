@@ -36,6 +36,7 @@
                 <img width="110px" src="../../public/assets/images/logo-black.png">
             </a>
 
+
             <div class="collapse navbar-collapse" id="mobileNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-2"><a href="../menu/" class="nav-link active">Meniu</a></li>
@@ -64,6 +65,7 @@
                 </a>
                 <div id="items-count">0</div>
             </div>
+
         </div>
     </nav>
     <!--Navbar end-->
@@ -92,8 +94,10 @@
     </div>
 
     <!--Spinner-->
-    <div id="bg-spinner">
-        <div id="spinner" class="spinner-border text-light" role="status">
+    <div id="bg-spinner"
+        class="position-fixed top-0 start-0 w-100 vh-100 d-flex justify-content-center align-items-center z-1000"
+        style="background-color: rgba(32, 31, 31, 0.75);">
+        <div id="spinner" class="spinner-border text-light" role="status" style="height: 50px; width: 50px;">
         </div>
     </div>
     <!--Spinner end-->
@@ -102,7 +106,6 @@
     <button type="button"
         class="btn btn-dark btn-lg rounded-circle position-fixed bottom-1 right-1 z-full border-warning d-none"
         id="btn-back-to-top">
-        <!-- <i class="fas fa-arrow-up"></i> -->
         <i class="fas fa-chevron-up"></i>
     </button>
 
@@ -168,11 +171,11 @@
         aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content bg-dark">
-                <div class="row">
-                    <div class="col-sm-5 product_img">
+                <div class="row flex-column flex-md-row">
+                    <div class="col-12 col-md-6 product_img" style="object-position: center;">
                         <img class="img-responsive rounded" id="product-image" src="">
                     </div>
-                    <div class="col-sm-7">
+                    <div class="col-12 col-md-6">
                         <div class="modal-header mx-3">
                             <h3 class="modal-title mx-0" id="product-title"></h3>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
@@ -184,13 +187,13 @@
                                     <p class="mx-3 mb-0" id="product-description"></p>
                                     <p class="mx-3 my-0" id="product-weight"><i></i></p>
                                     <div class="mx-3 mt-5 align">
-                                        <div class="d-flex">
+                                        <div class="d-flex my-3">
                                             <h5>Valoarea comenzii:</h5>
                                             <h5 class="mx-2" id="product-price"></h5>
                                         </div>
                                         <div class="d-grid">
                                             <button
-                                                class="btn btn-outline-secondary d-flex justify-content-center align-items-center"
+                                                class="btn btn-outline-secondary d-flex justify-content-center align-items-center background-primary text-white"
                                                 type="button" id="add-to-cart-button" data-md-id=""
                                                 data-bs-dismiss="modal" aria-label="Close">
                                                 În coș

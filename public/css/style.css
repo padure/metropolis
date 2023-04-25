@@ -48,6 +48,10 @@ body {
   font-family: "Oleo Script Bold";
 }
 
+.fs-7 {
+  font-size: 0.8rem;
+}
+
 /* For background */
 .bg-cover {
   background-size: cover;
@@ -57,6 +61,12 @@ body {
   background-color: #fd9d0b !important;
 }
 
+.bg-darker {
+  background-color: rgba(27, 26, 27, 0.8) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+          backdrop-filter: blur(10px) !important;
+}
+
 .dvh-100 {
   height: 100dvh;
 }
@@ -64,6 +74,10 @@ body {
 .z-index-10 {
   position: relative;
   z-index: 10;
+}
+
+.z-1000 {
+  z-index: 1000;
 }
 
 .grid {
@@ -106,6 +120,15 @@ body {
 
 .z-full {
   z-index: 1000;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .wrapper {
@@ -223,6 +246,36 @@ input:checked + label {
   padding: 0 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .first-section {
+    display: block;
+  }
+  #gallery {
+    display: none;
+  }
+  label {
+    font-size: 12px;
+    padding: 3px;
+  }
+  .for-our-menu > input + label {
+    color: white;
+    border-top: 2px solid white;
+  }
+  .modal img {
+    width: 100%;
+    height: 30vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  input:checked + label {
+    color: white;
+    border-top: 4px solid #fd9d0b;
+  }
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
 .sidebar .nav-item:hover {
   border: 1px solid #ffc107;
 }
