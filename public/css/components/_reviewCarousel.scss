@@ -1,0 +1,18 @@
+.owl-nav {
+  background-color: aqua !important;
+}
+.owl-prev,
+.owl-next {
+  font-size: 1.5rem !important;
+  padding: 10px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.owl-prev {
+  left: -1.25rem;
+}
+.owl-next {
+  right: -1.25rem;
+}

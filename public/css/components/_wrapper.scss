@@ -14,10 +14,15 @@
     height: 100%;
     width: 100%;
     // background-color: rgba(0, 0, 0, 0.9);
+    // background: linear-gradient(
+    //   to top,
+    //   rgba(17, 17, 17, 1),
+    //   rgba(17, 17, 17, 0.9)
+    // );
     background: linear-gradient(
       to top,
-      rgba(17, 17, 17, 1),
-      rgba(17, 17, 17, 0.9)
+      rgba(27, 26, 27, 1),
+      rgba(27, 26, 27, 0.85)
     );
     z-index: 2;
   }
@@ -39,7 +44,7 @@
   }
 
   .hero-cta {
-    background-color: #fd9d0b;
+    background-color: #fd9d0b !important;
     border-radius: 2rem;
   }
 }

@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #111111 !important;
+  background-color: #1b1a1b !important;
   color: white !important;
   font-family: sans-serif;
 }
@@ -144,7 +144,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0.9));
+  background: linear-gradient(to top, rgb(27, 26, 27), rgba(27, 26, 27, 0.85));
   z-index: 2;
 }
 .wrapper .bar {
@@ -161,8 +161,37 @@ body {
   color: #fd9d0b;
 }
 .wrapper .hero-cta {
-  background-color: #fd9d0b;
+  background-color: #fd9d0b !important;
   border-radius: 2rem;
+}
+
+.feature {
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.feature h4 {
+  letter-spacing: 1.5px;
+}
+
+.mask {
+  background-color: rgba(27, 26, 27, 0.9);
+  z-index: 10;
+}
+
+.features > i {
+  color: #fd9d0b;
+  font-size: 3rem;
+}
+
+.features > h4 {
+  font-size: 1.2rem;
+}
+
+.features > p {
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 .shopping-cart:link,
@@ -276,6 +305,28 @@ input:checked + label {
     font-size: 18px;
   }
 }
+.owl-nav {
+  background-color: aqua !important;
+}
+
+.owl-prev,
+.owl-next {
+  font-size: 1.5rem !important;
+  padding: 10px !important;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.owl-prev {
+  left: -1.25rem;
+}
+
+.owl-next {
+  right: -1.25rem;
+}
+
 .sidebar .nav-item:hover {
   border: 1px solid #ffc107;
 }

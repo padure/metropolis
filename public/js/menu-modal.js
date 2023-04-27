@@ -109,8 +109,8 @@ cards.forEach((card) => {
     modal_image.src = product.img;
     modal_title.textContent = product.nume;
     modal_description.textContent = product.descriere;
-    modal_weight.textContent = `${product.cantitate} g`;
-    modal_price.textContent = `${product.pret} mdl`;
+    modal_weight.textContent = quantityFormatter.format(product.cantitate);
+    modal_price.textContent = priceFormatter.format(product.pret);
     modal_add_to_cart_id.setAttribute("data-md-id", product?.id);
 
     modalContentTest.show();
@@ -120,6 +120,8 @@ cards.forEach((card) => {
 $(`.owl-carousel`).owlCarousel({
   loop: true,
   margin: 5,
+  animateOut: "slideOutDown",
+  animateIn: "flipInX",
   nav: true,
   dots: false,
   autoWidth: true,

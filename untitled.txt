@@ -1,0 +1,64 @@
+ <div class="row my-3">
+
+                            <!-- Review item -->
+                            <div id="first-review" class="col-md-4 review">
+                                <div class="py-4 bg-dark text-white text-center">
+                                    <img class="rounded-circle" width="100px" height="100px"
+                                        src="./public/assets/images/index/woman-user.png">
+                                    <div class="my-3 mx-0" style="font-size: 18px;">Катана Ульяна Викторовна</div>
+                                    <div class="mb-3" style="color: #fd9d0b;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p class="mx-3">
+                                        Salate sănătoase / Great cocktails.
+                                        Servire excelentă, atmosfera placută si relaxantă, muzică live, mâncare gustoasă
+                                        și la preț ieftin.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Review item-->
+                            <div id="second-review" class="col-md-4 review">
+                                <div class="py-4 bg-dark text-white text-center">
+                                    <img class="rounded-circle" width="100px" height="100px"
+                                        src="./public/assets/images/index/man-user.png">
+                                    <div class="my-3 mx-0" style="font-size: 18px;">Zgherea Marius-Marcel</div>
+                                    <div class="mb-3" style="color: #fd9d0b;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mx-3">
+                                        Un restaurant foarte bun, pe care îl găsești cu bucate tradiționale moldovenești
+                                        cât și internaționale.
+                                        Recomand cu încredere.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Review item-->
+                            <div id="third-review" class="col-md-4 review">
+                                <div class="py-4 bg-dark text-white text-center">
+                                    <img class="rounded-circle" width="100px" height="100px"
+                                        src="./public/assets/images/index/woman-user.png">
+                                    <div class="my-3 mx-0" style="font-size: 18px;">Rodica Cocoș</div>
+                                    <div class="mb-3" style="color: #fd9d0b;">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <p class="mx-3">
+                                        Îmi place mult aici! Recomand tuturor celor care vor sa manânce gustos!
+                                        Atmosferă romantică / Listă de vinuri bogată / Relaxare
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
