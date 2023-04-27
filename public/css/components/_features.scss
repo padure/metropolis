@@ -1,10 +1,15 @@
 .feature {
-  background-image: url("../assets/images/index/bg-features.jpg");
+  background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   background-attachment: fixed;
   background-size: cover;
+  background-position: center;
+
+  h4 {
+    letter-spacing: 1.5px;
+  }
 }
 .mask {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(27, 26, 27, 0.9);
   z-index: 10;
 }
 .features > i {

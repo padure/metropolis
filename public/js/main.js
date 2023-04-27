@@ -60,3 +60,22 @@ const updateProductsCounter = (value) => {
 const cartProducts = getProductsFromLS(CART_PRODUCTS_KEY) || [];
 console.log(cartProducts);
 updateProductsCounter(cartProducts.length);
+
+$(".owl-carousel").owlCarousel({
+  margin: 5,
+  nav: true,
+  dots: false,
+  responsiveClass: true,
+  navText: [
+    '<i class="far fa-chevron-left"></i>',
+    '<i class="far fa-chevron-right"></i>',
+  ],
+  responsive: {
+    0: {
+      items: 1,
+    },
+    1000: {
+      items: 3,
+    },
+  },
+});

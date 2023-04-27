@@ -17,7 +17,10 @@
     <!--Css links-->
     <link rel="stylesheet" href="./public/css/style.css">
     <link rel="stylesheet" href="./public/css/all.min.css">
+    <link rel="stylesheet" href="./public/css/regular.min.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
 
 </head>
 
@@ -108,7 +111,7 @@
                             <b>Metropolis Cahul</b> vă pune la dispoziție
                             cea mai variată gamă de bucate pentru cei mai gurmanzi oaspeți.
                         </p>
-                        <a href="" class="hero-cta btn text-white px-4 mt-3" role="button">
+                        <a href="./pages/menu/" class="hero-cta btn text-white px-4 mt-3" role="button">
                             Vezi meniul
                         </a>
                     </div>
@@ -157,7 +160,7 @@
                 </p>
                 <!-- <div> <button onclick="location.href = 'about_us.html';" class="my-3 text-white" id="button"
                                 type="submit"><b>Despre noi</b></button></div> -->
-                <a href="" class="background-primary radius-2 btn text-white px-4 mt-3" role="button">
+                <a href="./pages/menu/" class="background-primary radius-2 btn text-white px-4 mt-3" role="button">
                     Vezi meniul
                 </a>
             </div>
@@ -172,22 +175,22 @@
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 my-5">
                     <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
                         <i class="py-3 my-1 fa fa-car-side"></i>
-                        <h4 class="fw-bold mb-0">Livrare</h4>
+                        <h4 class="font-second-regular fs-3 fw-bold mb-0">Livrare</h4>
                         <p>Disponibil în raza orașului. Orar 10:00-22:00</p>
                     </div>
                     <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
                         <i class="py-3 my-1 fa fa-utensils"></i>
-                        <h4 class="fw-bold mb-0">Calitate</h4>
+                        <h4 class="font-second-regular fs-3 fw-bold mb-0">Calitate</h4>
                         <p>Pentru noi, confortul și siguranța sunt pe primul loc.</p>
                     </div>
                     <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
                         <i class="py-3 my-1 fa fa-pizza-slice"></i>
-                        <h4 class="fw-bold mb-0">Meniu variat</h4>
+                        <h4 class="font-second-regular fs-3 fw-bold mb-0">Meniu variat</h4>
                         <p>Preparate pentru toate gusturile.</p>
                     </div>
                     <div class="col d-flex flex-wrap flex-column align-items-center my-5 features">
                         <i class="py-3 my-1 fa fa-birthday-cake"></i>
-                        <h4 class="fw-bold mb-0">Momente unice</h4>
+                        <h4 class="font-second-regular fs-3 fw-bold mb-0">Momente unice</h4>
                         <p>Rezervă pentru momentele importante din viața ta</p>
                     </div>
                 </div>
@@ -465,7 +468,8 @@
                                         <p class="m-0 fs-7">Cinderella, Cabriolet, Mojito, Aperol</p>
                                     </div>
                                 </div>
-                                <a href="" class="background-primary radius-2 btn text-white px-4 mt-3" role="button">
+                                <a href="./pages/menu/" class="background-primary radius-2 btn text-white px-4 mt-3"
+                                    role="button">
                                     Vezi meniul
                                 </a>
                             </div>
@@ -478,52 +482,40 @@
     <!--Menu Carousel (menu-modal reference) end-->
 
     <!--Review section-->
-    <div class=" bg-image mt-4 m-0" style="background-image: url('./public/assets/images/index/bg-review.jpg');">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.85);">
+    <div class="bg-image mt-4 m-0"
+        style="background-image: url('https://images.unsplash.com/photo-1592861956120-e524fc739696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+        background-size: cover; background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
+        <div class="mask py-3" style="background-color: rgba(27, 26, 27, 0.85);">
             <div class="container text-section">
-                <h1 class="py-3 mb-4 text-center font-second-bold display-4">
+                <h1 class="py-3 mb-4 text-center font-second-bold display-4 border-bottom">
                     <span class="color-primary">Re</span>view section
                 </h1>
                 <div>
                     <div class="inner m-auto" style="max-width: 1200px;">
-                        <div class="border"></div>
-                        <div class="row my-3">
 
-                            <!--Review item-->
-                            <div id="first-review" class="col-md-4 review">
-                                <div class="py-4 bg-dark text-white text-center">
-                                    <img class="rounded-circle" width="100px" height="100px"
-                                        src="./public/assets/images/index/woman-user.png">
-                                    <div class="my-3 mx-0" style="font-size: 18px;">Катана Ульяна Викторовна</div>
-                                    <div class="mb-3" style="color: #fd9d0b;">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
-                                        <i class="far fa-star"></i>
+                        <!--Reviews carousel-->
+                        <div class="owl-carousel">
+
+                            <!--First card-->
+                            <div class="card bg-dark text-white">
+                                <div class="card-header d-flex align-items-center">
+                                    <div style="height: 60px; width: 60px;">
+                                        <img src="https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80"
+                                            alt="" class="rounded-circle w-100 h-100 object-cover">
                                     </div>
-                                    <p class="mx-3">
-                                        Salate sănătoase / Great cocktails.
-                                        Servire excelentă, atmosfera placută si relaxantă, muzică live, mâncare gustoasă
-                                        și la preț ieftin.
-                                    </p>
+                                    <div class="d-flex flex-column ms-4">
+                                        <div class="stars text-warning fs-7">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <h4 class="fs-6 mt-2">Zgherea Marius-Marcel</h4>
+                                    </div>
                                 </div>
-                            </div>
-
-                            <!--Review item-->
-                            <div id="second-review" class="col-md-4 review">
-                                <div class="py-4 bg-dark text-white text-center">
-                                    <img class="rounded-circle" width="100px" height="100px"
-                                        src="./public/assets/images/index/man-user.png">
-                                    <div class="my-3 mx-0" style="font-size: 18px;">Zgherea Marius-Marcel</div>
-                                    <div class="mb-3" style="color: #fd9d0b;">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <p class="mx-3">
+                                <div class="card-body fs-7 text-center">
+                                    <p>
                                         Un restaurant foarte bun, pe care îl găsești cu bucate tradiționale moldovenești
                                         cât și internaționale.
                                         Recomand cu încredere.
@@ -531,20 +523,53 @@
                                 </div>
                             </div>
 
-                            <!--Review item-->
-                            <div id="third-review" class="col-md-4 review">
-                                <div class="py-4 bg-dark text-white text-center">
-                                    <img class="rounded-circle" width="100px" height="100px"
-                                        src="./public/assets/images/index/woman-user.png">
-                                    <div class="my-3 mx-0" style="font-size: 18px;">Rodica Cocoș</div>
-                                    <div class="mb-3" style="color: #fd9d0b;">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="far fa-star"></i>
+                            <!--Second card-->
+                            <div class="card bg-dark text-white">
+                                <div class="card-header d-flex align-items-center">
+                                    <div style="height: 60px; width: 60px;">
+                                        <img src="https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+                                            alt="" class="rounded-circle w-100 h-100 object-cover">
                                     </div>
-                                    <p class="mx-3">
+                                    <div class="d-flex flex-column ms-4">
+                                        <div class="stars text-warning fs-7">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h4 class="fs-6 mt-2">Катана Ульяна Викторовна</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body fs-7 text-center">
+                                    <p>
+                                        Salate sănătoase / Great cocktails.
+                                        Servire excelentă, atmosfera placută si relaxantă, muzică live, mâncare gustoasă
+                                        și la preț ieftin.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!--Third card-->
+                            <div class="card bg-dark text-white">
+                                <div class="card-header d-flex align-items-center">
+                                    <div style="height: 60px; width: 60px;">
+                                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"
+                                            alt="" class="rounded-circle w-100 h-100 object-cover">
+                                    </div>
+                                    <div class="d-flex flex-column ms-4">
+                                        <div class="stars text-warning fs-7">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <h4 class="fs-6 mt-2">Rodica Cocos</h4>
+                                    </div>
+                                </div>
+                                <div class="card-body fs-7 text-center">
+                                    <p>
                                         Îmi place mult aici! Recomand tuturor celor care vor sa manânce gustos!
                                         Atmosferă romantică / Listă de vinuri bogată / Relaxare
                                     </p>
@@ -558,17 +583,20 @@
         </div>
     </div>
     </div>
+    </div>
     <!--Review section end-->
 
     <!--Cookie-container-->
     <div class="cookie-disclaimer">
         <div class="cookie-close accept-cookie"><i class="fa fa-times"></i></div>
         <div class="container">
-            <h4>Acest website a fost realizat în cadrul competiției <b>”Tekwill Junior Ambassadors”</b> organizată de
+            <h4>Acest website a fost realizat în cadrul competiției <b>”Tekwill Junior Ambassadors”</b> organizată
+                de
                 proiectul
                 <b>”Tekwill în Fiecare Școală”</b> și nu reflectă neapărat opinia proiectului.
             </h4>
-            <div> <button class="my-3 text-white accept-cookie" id="button" type="button"><b>Închide</b></button></div>
+            <div> <button class="my-3 text-white accept-cookie" id="button" type="button"><b>Închide</b></button>
+            </div>
         </div>
     </div>
 
