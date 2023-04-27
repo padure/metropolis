@@ -5,6 +5,7 @@ import {
 
 const navbar = document.querySelector(".navbar");
 const productsCounter = document.querySelector("#items-count");
+const toastLiveExample = document.getElementById("cookie-toast");
 
 window.addEventListener("scroll", () => {
   window.scrollY > 100
@@ -79,3 +80,11 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
+
+setTimeout(() => {
+  const toast = new bootstrap.Toast(toastLiveExample);
+
+  toast.show();
+  // console.log(toastLiveExample);
+  // toastLiveExample.classList.add("show");
+}, 3000);
