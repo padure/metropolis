@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #111111 !important;
+  background-color: #1b1a1b !important;
   color: white !important;
   font-family: sans-serif;
 }
@@ -144,7 +144,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to top, rgb(17, 17, 17), rgba(17, 17, 17, 0.9));
+  background: linear-gradient(to top, rgb(27, 26, 27), rgba(27, 26, 27, 0.85));
   z-index: 2;
 }
 .wrapper .bar {
