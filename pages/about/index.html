@@ -13,19 +13,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Despre noi | Metropolis</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&family=Open+Sans:wght@500&display=swap">
-    <link rel="stylesheet" href="../../public/css/main.css">
-    <script src="https://kit.fontawesome.com/a9719e28a4.js" crossorigin="anonymous"></script>
+
+    <!--Css Links-->
+    <link rel="stylesheet" href="../../public/css/style.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../public/css/all.min.css">
 </head>
 
-<body>
+<body class="font-base-light">
     <!--Navbar-->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top py-3 my-navbar">
+    <nav class="navbar navbar-expand-md fixed-top top-0 navbar-dark dark-version">
         <div class="container">
 
             <!--Toggle Button-->
@@ -37,84 +34,109 @@
                 <img width="110px" src="../../public/assets/images/logo-black.png">
             </a>
 
+
             <div class="collapse navbar-collapse" id="mobileNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-2"><a href="../menu/" class="nav-link">Meniu</a></li>
+                    <li class="nav-item mx-2"><a href="../menu/" class="nav-link active">Meniu</a></li>
                     <li class="nav-item mx-2"><a href="../menu-local/" class="nav-link">Meniu în sală</a></li>
-                    <li class="nav-item mx-2"><a href="../about/" class="nav-link active">Despre noi</a></li>
+                    <li class="nav-item mx-2"><a href="../about/" class="nav-link">Despre noi</a></li>
                     <li class="nav-item mx-2"><a href="../contact/" class="nav-link">Contacte</a></li>
                 </ul>
             </div>
 
             <!--Shopping cart-->
             <div class="position-relative ms-0 ms-md-5 me-2">
-                <a href="../cart/" class="shopping-cart">
-                    <i class="fa fa-shopping-cart"></i>
+                <a href="../cart/" class="position-relative">
+                    <svg width="32px" height="32px" viewBox="0 0 24.00 24.00" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+                            stroke-width="0.048">
+                        </g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path
+                                d="M4.78571 5H18.2251C19.5903 5 20.5542 6.33739 20.1225 7.63246L18.4558 12.6325C18.1836 13.4491 17.4193 14 16.5585 14H6.07142M4.78571 5L4.74531 4.71716C4.60455 3.73186 3.76071 3 2.76541 3H2M4.78571 5L6.07142 14M6.07142 14L6.25469 15.2828C6.39545 16.2681 7.23929 17 8.23459 17H17M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
+                                stroke="#ffffff" stroke-width="0.552" stroke-linecap="round" stroke-linejoin="round">
+                            </path>
+                        </g>
+                    </svg>
                 </a>
                 <div id="items-count">0</div>
             </div>
+
         </div>
     </nav>
     <!--Navbar-->
 
     <!--Info section-->
-    <div class="container" style="margin-top: 100px;">
-        <div class="row justify-content-between">
+    <div class="container mt-10">
+        <div class="row justify-content-between py-4">
             <div class="col-md-6 col-sm-12 justify-content-between align-items-center">
                 <!--Gallery-->
-                <div id="">
-                    <div class="d-flex m-3">
-                        <div class="m-2" id="first-photo"> <img width="100%" height="auto" alt="gallery-item"
-                                src="../../public/assets/images/about_us/5_unsplash.jpg"> </div>
-                        <div class="m-2" id="second-photo"> <img width="100%" height="auto" alt="gallery-item"
-                                src="../../public/assets/images/about_us/6_unsplash.jpg"> </div>
+                <div class="grid grid-columns-5 w-100">
+                    <div class="w-2 h-2 overflow-hidden rounded">
+                        <img alt="gallery-item" src="../../public/assets/images/about_us/5_unsplash.jpg"
+                            class="w-100 h-100 object-cover">
                     </div>
-                    <div class="d-flex m-3">
-                        <div class="m-2" id="third-photo"><img width="100%" height="auto" alt="gallery-item"
-                                src="../../public/assets/images/about_us/2_unsplash.jpg"></div>
-                        <div class="m-2" id="fourth-photo"><img width="100%" height="auto" alt="gallery-item"
-                                src="../../public/assets/images/about_us/4_unsplash.jpg"></div>
-                        <div>
-                            <div class="m-2" id="fifth-photo"><img width="100%" height="auto" alt="gallery-item"
-                                    src="../../public/assets/images/about_us/3_unsplash.jpg"></div>
-                            <div class="m-2" id="sixth-photo"><img width="100%" height="auto" alt="gallery-item"
-                                    src="../../public/assets/images/about_us/1_unsplash.jpg"></div>
-                        </div>
+                    <div class="w-3 overflow-hidden rounded">
+                        <img alt="gallery-item" src="../../public/assets/images/about_us/6_unsplash.jpg"
+                            class="w-100 h-100 object-cover">
+                    </div>
+                    <div class="h-2 w-2 overflow-hidden rounded">
+                        <img alt="gallery-item" src="../../public/assets/images/about_us/2_unsplash.jpg"
+                            class="w-100 h-100 object-cover">
+                    </div>
+                    <div class="w-1 overflow-hidden rounded">
+                        <img alt="gallery-item" src="../../public/assets/images/about_us/4_unsplash.jpg"
+                            class="w-100 h-100 object-cover">
+                    </div>
+                    <div class=" w-2 overflow-hidden rounded">
+                        <img alt="gallery-item" src="../../public/assets/images/about_us/1_unsplash.jpg"
+                            class="w-100 h-100 object-cover">
+                    </div>
+                    <div class="w-1 overflow-hidden rounded">
+                        <img alt="gallery-item" src="../../public/assets/images/about_us/3_unsplash.jpg"
+                            class="w-100 h-100 object-cover">
                     </div>
                 </div>
             </div>
+
             <div class="col-md-6 col-sm-12 align-items-center">
                 <!--Content-->
-                <div class="my-4 ml-0 text-section">
-                    <h1 class="m-5"><span>Ex</span>periente culinare si gusturi deosebite</h1>
-                    <p class="m-5">
+                <div class=" ml-0 text-section px-0 px-md-5 mt-4 mt-md-0">
+                    <h1 class=" font-second-regular display-4 mb-3">
+                        <span class="color-primary">Ex</span>periente culinare
+                        si gusturi deosebite
+                    </h1>
+                    <p class="mb-4">
                         Echipa <b>Metropolis</b> pune la dispoziția voastră o colecție vibrantă de preparate diverse și
                         delicioase. Situat central față de comunitatea orașului Cahul,
                         <b>Metropolis</b> este pentru a vă oferi un spațiu de adunare pentru colaborare centrat pe
                         mâncăruri și băuturi de calitate pentru bucuria tuturor oaspeților noștri.
                     </p>
-                    <div class="d-flex m-5 ml-0">
+                    <div class="d-flex ml-0">
                         <div class="m-2 icon-section">
-                            <div class="p-2 rounded">
+                            <div class="p-2 rounded background-primary">
                                 <img src="../../public/assets/images/about_us/hamburger.png">
                             </div>
                             <p class="my-2 text-center">Fast Food</p>
                         </div>
                         <div class="m-2 icon-section">
-                            <div class="p-2 rounded">
+                            <div class="p-2 rounded background-primary">
                                 <img src="../../public/assets/images/about_us/salad.png">
                             </div>
                             <p class="my-2 text-center">Salate</p>
                         </div>
                         <div class="m-2 icon-section">
-                            <div class="p-2 rounded">
+                            <div class="p-2 rounded background-primary">
                                 <img src="../../public/assets/images/about_us/drink.png">
                             </div>
                             <p class="my-2 text-center">Băuturi</p>
                         </div>
                     </div>
-                    <div class="bg-white m-5 px-4 py-1 d-flex exp-card rounded">
-                        <h2 class="py-3 mx-2"><b>7+</b></h2>
+
+                    <div class="bg-white mt-4 px-4 py-1 d-flex mw-50 mw-50 rounded border-start border-base border-5">
+                        <h2 class="py-3 mx-2 color-primary"><b>7+</b></h2>
                         <div class="py-2">
                             <h5 class="my-0 text-dark"><b>years of</b></h5>
                             <h3 class="my-0 text-dark"><b>Experience</b></h3>
@@ -127,72 +149,57 @@
     <!--Info section end-->
 
     <!--Personal & We are hiring section-->
-    <div class="bg-image my-3 mx-0" style="background-image: url('Images/about_us/bg-form.jpg');">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.9); ">
+    <div class="bg-image bg-cover bg-no-repeat bg-center my-3 mx-0"
+        style="background-image: url('../../public/assets/images/about_us/bg-form.jpg');">
+        <div class="mask ">
             <div class="container text-section py-4 px-3">
-                <h1 class="text-center pt-2"><span>An</span>gajatii nostri</h1>
-                <div class="first-section">
-                    <!--Member of team-->
-                    <div class="d-md-flex m-4 my-2">
-                        <div class="mx-2">
-                            <div class="p-2">
-                                <img alt="team-member" class="rounded-0 team-member"
-                                    src="../../public/assets/images/about_us/team1.jpg">
-                                <div class="rounded-0 bg-white text-dark p-2 team-member-body">
-                                    <div class="m-0">Nume Prenume</div>
-                                    <div class="m-0"><b>Manager</b></div>
-                                </div>
-                            </div>
-                            <div class="p-2">
-                                <img alt="team-member" class="rounded-0 team-member"
-                                    src="../../public/assets/images/about_us/team2.jpg">
-                                <div class="rounded-0 bg-white text-dark p-2 team-member-body">
-                                    <div class="m-0">Nume Prenume</div>
-                                    <div class="m-0"><b>Chelner</b></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="m-5 mx-2">
-                            <div class="p-2">
-                                <img alt="team-member" class="rounded-0 team-member"
-                                    src="../../public/assets/images/about_us/team1.jpg">
-                                <div class="rounded-0 bg-white text-dark p-2 team-member-body">
-                                    <div class="m-0">Nume Prenume</div>
-                                    <div class="m-0"><b>Bucătar Șef</b></div>
-                                </div>
-                            </div>
-                            <div class="p-2">
-                                <img alt="team-member" class="rounded-0 team-member"
-                                    src="../../public/assets/images/about_us/team2.jpg">
-                                <div class="rounded-0 bg-white text-dark p-2 team-member-body">
-                                    <div class="m-0">Nume Prenume</div>
-                                    <div class="m-0"><b>Chelner</b></div>
-                                </div>
-                            </div>
-                        </div>
+                <!-- <h1 class="text-center pt-2"><span>An</span>gajatii nostri</h1> -->
+                <!--Hiring form-->
+                <div class="m-0 py-5 w-50 m-auto">
+                    <div class="p-2 text">
+                        <!-- <p class="my-0 ">Metropolis</p>
+                        <h2 class="my-0"><b>angajeaza</b></h2> -->
+                        <h2 class="font-second-bold text-center">
+                            <span class="color-primary">In</span>tra in echipa noastra!
+                        </h2>
                     </div>
-                    <!--Hiring form-->
-                    <div class="m-0 py-5">
-                        <div class="m-5 p-2 text">
-                            <p class="my-0 ">Metropolis</p>
-                            <h2 class="my-0"><b>angajeaza</b></h2>
-                        </div>
-                        <div class="mx-5">
-                            <form id="myForm" method="post">
-                                <div> <input class="my-3 pb-2 pt-3 form-control rounded border-0 text-white" type="text"
-                                        name="name" id="name" placeholder="Nume Prenume*" required></div>
-                                <div> <input class="my-3 pb-2 pt-3 form-control rounded border-0 text-white"
-                                        type="email" name="email" id="email" placeholder="Email*" required></div>
-                                <div> <textarea class="my-3 p-2 rounded form-control border-0 text-white" id="message"
-                                        name="message" placeholder="Mesajul tau*" rows="5" cols="55"></textarea></div>
-                                <div> <button class="my-3 p-2 text-white button-hiring"
-                                        type="submit"><b>Trimite</b></button></div>
-                            </form>
-                        </div>
+                    <div class="text-dark">
+                        <form id="myForm" method="post">
+                            <div class="row">
+
+                                <div class="col">
+                                    <div>
+                                        <input class="py-2 form-control rounded border-0" type="text" name="name"
+                                            id="name" placeholder="Nume Prenume*" required>
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <input class="py-2 form-control rounded border-0" type="text" name="name"
+                                            id="name" placeholder="Nume Prenume*" required>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <input class="my-3 py-2 form-control rounded border-0" type="email" name="email"
+                                    id="email" placeholder="Email*" required>
+                            </div>
+                            <div>
+                                <textarea class="my-3 p-2 rounded form-control border-0" id="message" name="message"
+                                    placeholder="Mesajul tau*" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <button class="my-1 px-5 py-2 text-white background-primary rounded-5 border-0"
+                                    type="submit">Trimite</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!--Personal & We are hiring section end-->
 
@@ -275,11 +282,8 @@
         <div class="text-center p-3" style="background-color: #fd9d0b;"></div>
     </footer>
     <!--Footer-->
-    <script src="https://apis.google.com/js/api.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="module" src="./public/js/about-us.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="module" src="../../public/js/about-us.js"></script>
     <script>
         //saving data collected from user to localStorage
         const myForm = document.getElementById('myForm')
