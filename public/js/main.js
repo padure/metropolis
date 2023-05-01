@@ -85,6 +85,4 @@ setTimeout(() => {
   const toast = new bootstrap.Toast(toastLiveExample);
 
   toast.show();
-  // console.log(toastLiveExample);
-  // toastLiveExample.classList.add("show");
 }, 3000);
