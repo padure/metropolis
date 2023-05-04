@@ -3,7 +3,8 @@ import {
   updateLS,
   CART_PRODUCTS_KEY,
 } from "../js/helpers/storage-helper.js";
-import { Card } from "../js/components/cart-card.js";
+import { Card } from "../../public/js/components/cart-card.js";
+
 
 const productsContainer = document.querySelector("#cart_items");
 const itemsCounter = document.querySelector("#items-count");
