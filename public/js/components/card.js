@@ -4,7 +4,7 @@ const Card = (
 ) => {
   return `
     <div class="card bg-dark text-white p-2 cursor-pointer" style="width: 16rem;" data-id="${id}" data-bs-toggle="tooltip" data-bs-placement="top" title="${nume}">
-            <div class="card-image" style="height: 300px; overflow: hidden;">
+            <div class="card-image h-sm" >
                 <img src="${img}" class="card-img-top rounded w-100 h-100" alt="${nume}" style="object-fit: cover;">
             </div>
             <div class="card-body p-0">
