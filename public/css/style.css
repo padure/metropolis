@@ -274,7 +274,7 @@ body {
           backdrop-filter: blur(10px);
 }
 
-section {
+#sections > section {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
@@ -285,7 +285,7 @@ input {
   display: none;
 }
 
-label {
+#sections > label {
   display: inline-block;
   padding: 15px 25px;
   font-weight: 600;
@@ -424,5 +424,14 @@ input:checked + label {
 @media screen and (min-width: 768px) {
   .w-md-50 {
     width: 50% !important;
+  }
+}
+.h-15 {
+  height: 10rem !important;
+}
+
+@media screen and (min-width: 768px) {
+  .h-md-5 {
+    height: 5rem !important;
   }
 }/*# sourceMappingURL=style.css.map */

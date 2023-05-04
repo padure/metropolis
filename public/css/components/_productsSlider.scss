@@ -1,4 +1,4 @@
-section {
+#sections > section {
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
@@ -7,7 +7,7 @@ section {
 input {
   display: none;
 }
-label {
+#sections > label {
   display: inline-block;
   padding: 15px 25px;
   font-weight: 600;
