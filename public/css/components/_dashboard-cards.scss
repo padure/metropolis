@@ -1,0 +1,54 @@
+.card {
+    border: 0;
+    background: linear-gradient(to bottom, #222328, #1a191d); 
+}
+.bg-gradient-danger {
+    background: linear-gradient(to right, #ffbf96, #fe7096) !important;
+}
+.bg-gradient-info {
+    background: linear-gradient(to right, #90caf9, #047edf 99%) !important;
+}
+.bg-gradient-success {
+    background: linear-gradient(to right, #84d9d2, #07cdae) !important;
+}
+.card.card-img-holder {
+    position: relative;
+}
+.card.card-img-holder .card-img-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.stretch-card {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+}
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%;
+}
+.grid-margin {
+    margin-bottom: 2.5rem;
+}
+@media (min-width: 576px) {
+    .grid-margin-sm-0 {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 768px) {
+    .grid-margin-md-0 {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 992px) {
+    .grid-margin-lg-0 {
+        margin-bottom: 0;
+    }
+}
+@media (min-width: 1200px) {
+    .grid-margin-xl-0 {
+        margin-bottom: 0;
+    }
+}

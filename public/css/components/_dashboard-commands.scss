@@ -1,0 +1,173 @@
+/*table*/
+.table,
+.jsgrid .jsgrid-table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #fff;
+  vertical-align: top;
+  border-color: #322f2f;
+}
+.table > :not(caption) > * > *,
+.jsgrid .jsgrid-table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  border-bottom-width: 1px;
+}
+.table > tbody,
+.jsgrid .jsgrid-table > tbody {
+  vertical-align: inherit;
+}
+.table > thead,
+.jsgrid .jsgrid-table > thead {
+  vertical-align: bottom;
+}
+.table > :not(:first-child),
+.jsgrid .jsgrid-table > :not(:first-child) {
+  border-top: 2px solid currentColor;
+}
+.table-dark {
+  color: #fff;
+  border-color: #373b3e;
+}
+/*Badge*/
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+.badge-success {
+  border: 1px solid #1bcfb4;
+  color: #ffffff;
+  background: #1bcfb4;
+}
+.badge-warning {
+  border: 1px solid #fed713;
+  color: #ffffff;
+  background: #fed713;
+}
+.badge-danger {
+  border: 1px solid #fe7c96;
+  color: #ffffff;
+  background: #fe7c96;
+}
+.accordion .card {
+  margin-bottom: 0.75rem;
+  box-shadow: 0px 1px 15px 1px #252222e3;
+  border-radius: 0.25rem;
+}
+.accordion .card .card-header {
+  background-color: transparent;
+  border: none;
+  padding: 2rem;
+}
+.accordion .card .card-header * {
+  font-family: "ubuntu-regular", sans-serif;
+  font-size: 1rem;
+}
+.accordion .card .card-header a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  position: relative;
+  transition: color 0.5s ease;
+  padding-right: 0.5rem;
+}
+.accordion .card .card-header a:before {
+  font-family: "Material Design Icons";
+  position: absolute;
+  right: 7px;
+  top: 0;
+  font-size: 18px;
+  display: block;
+}
+.accordion .card .card-header a[aria-expanded="true"]:before {
+  content: "\F374"; //icon
+}
+.accordion .card .card-header a[aria-expanded="false"]:before {
+  content: "\F415"; //icon
+}
+.accordion .card .card-body {
+  font-size: 14px;
+  padding: 0 2rem 2rem 2rem;
+  font-family: "ubuntu-regular", sans-serif;
+  line-height: 1.5;
+}
+.accordion .card .card-body i {
+  font-size: 1.25rem;
+}
+.accordion.accordion-solid-header .card {
+  padding: 0;
+}
+.accordion.accordion-solid-header .card .card-header {
+  padding: 0;
+}
+.accordion.accordion-solid-header .card .card-header a {
+  padding: 1rem; 
+  transition: all 0.2s linear;
+}
+.accordion.accordion-solid-header .card .card-header a:before {
+  top: 40%;
+  right: 40px;
+}
+.accordion.accordion-solid-header .card .card-header a[aria-expanded="true"] {
+  background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+  border-radius: 0.3rem;
+  //gradient colors !!!!!!!!!!!!!!!!!
+  color: #ffffff;
+  font-weight: bold;
+}
+.accordion.accordion-solid-header
+  .card
+  .card-header
+  a[aria-expanded="true"]:before {
+  content: "\F0143"; //icon
+  color: #ffffff;
+}
+.accordion.accordion-solid-header
+  .card
+  .card-header
+  a[aria-expanded="false"]:before {
+  content: "\f0140";
+} //icon
+.accordion.accordion-solid-header .card .card-body {
+  padding: 2rem;
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing {
+    transition: none;
+  }
+}
+.collapsing.collapse-horizontal {
+  width: 0;
+  height: auto;
+  transition: width 0.35s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .collapsing.collapse-horizontal {
+    transition: none;
+  }
+}
+//custom code
+@media (min-width: 768px) {
+  .card-header table {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .card-header table td {
+    width: 16.66%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
