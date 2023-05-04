@@ -3,20 +3,18 @@ import {
   updateLS,
   CART_PRODUCTS_KEY,
 } from "../js/helpers/storage-helper.js";
-import { Card } from "../../components/cart-card.js";
+import { Card } from "../js/components/cart-card.js";
 
 const productsContainer = document.querySelector("#cart_items");
 const itemsCounter = document.querySelector("#items-count");
 const productsCounter = document.querySelector("#products-counter");
 
 const getProducts = async () => {
-  let response = await fetch("./data/produse.json");
+  let response = await fetch("../../data/produse.json");
   let products = response.json();
 
   return products;
 };
-
-
 
 const products = await getProducts();
 let productsFromLS = getProductsFromLS(CART_PRODUCTS_KEY);
@@ -133,16 +131,16 @@ const commandButtonElement = document.querySelector("#command-btn");
 
 const sendEmail = (email) => {
   let secureToken = "838d9357-3784-486f-95cf-9bd2a9883e64";
-  const cart_items = document.querySelectorAll('.title-item-card')
-  const totalPrice = document.getElementById('total-price')
-  
+  const cart_items = document.querySelectorAll(".title-item-card");
+  const totalPrice = document.getElementById("total-price");
+
   let htmlBody = `
     <h2>Dumneavoastră ați comandat:</h2>
-  `
-  cart_items.forEach(title=>{
-      htmlBody += `<li>${title.innerText}</li>`
-  })
-  htmlBody += `<p>La prețul total de <b>${totalPrice.innerText}</b></p>`
+  `;
+  cart_items.forEach((title) => {
+    htmlBody += `<li>${title.innerText}</li>`;
+  });
+  htmlBody += `<p>La prețul total de <b>${totalPrice.innerText}</b></p>`;
   Email.send({
     SecureToken: secureToken,
     From: "metropolis.cahul@gmail.com",
@@ -151,11 +149,12 @@ const sendEmail = (email) => {
     Body: htmlBody,
   }).then((message) => {
     console.log(message);
-    if (message === 'OK') {
+    if (message === "OK") {
       alert("Comanda a fost confirmata!");
-      location.replace("/menu-modal.html")
+      location.replace("/menu-modal.html");
       updateLS(CART_PRODUCTS_KEY, []);
-    }});
+    }
+  });
 };
 
 commandButtonElement.addEventListener("click", () => {
