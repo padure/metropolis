@@ -152,7 +152,7 @@ const sendEmail = (email) => {
     console.log(message);
     if (message === "OK") {
       alert("Comanda a fost confirmata!");
-      location.replace("/menu-modal.html");
+      location.replace("/pages/menu/");
       updateLS(CART_PRODUCTS_KEY, []);
     }
   });
