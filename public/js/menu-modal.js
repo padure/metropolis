@@ -70,7 +70,13 @@ categories.forEach((category) => {
   categoryTitle.classList.add("font-second-bold", "display-5");
 
   const slider = document.createElement("div");
-  slider.classList.add("row", "owl-carousel", "owl-theme", "card-group");
+  slider.classList.add(
+    "row",
+    "owl-carousel",
+    "owl-theme",
+    "card-group",
+    "mx-0"
+  );
 
   products
     .filter((product) => product.categorie == category)
@@ -126,8 +132,8 @@ $(`.owl-carousel`).owlCarousel({
   dots: false,
   autoWidth: true,
   navText: [
-    '<span class="fas fa-angle-left fa-lg"></span>',
-    '<span class="fas fa-angle-right fa-lg"></span>',
+    '<span class="fas fa-angle-left "></span>',
+    '<span class="fas fa-angle-right "></span>',
   ],
 });
 
