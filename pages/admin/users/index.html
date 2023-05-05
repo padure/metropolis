@@ -1,72 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-    content="Metropolis Cahul pune la dispoziția voastră o colecție vibrantă de preparate diverse și delicioase. Nu ezita sa vezi meniul !" />
+        content="Metropolis Cahul pune la dispoziția voastră o colecție vibrantă de preparate diverse și delicioase. Nu ezita sa vezi meniul !" />
     <meta name="keywords"
-    content="Metropolis, Cahul, livrare, bucatarie variata, bucate calde, pizza, salate, bucate din carne, garnituri, platouri, desert, bauturi, preturi accesibile" />
+        content="Metropolis, Cahul, livrare, bucatarie variata, bucate calde, pizza, salate, bucate din carne, garnituri, platouri, desert, bauturi, preturi accesibile" />
     <meta name="author" content="Apareci Aurica" />
     <meta name="author" content="Babaianu Savelie" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../../public/css/style.css">
+    <link rel="stylesheet" href="../../../public/css/admin.css">
     <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../node_modules/@mdi/font/css/materialdesignicons.min.css">
-</head> 
-<body>
-  <div class="container-scroller">
-    <!--Navbar-->
-    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-            <a class="navbar-brand brand-logo" href="index.html"><img
-                    src="../../../public/assets/images/logo-black.png" alt="logo" /></a>
-        </div>
-        <div class="navbar-menu-wrapper d-flex align-items-stretch">
-            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                <span class="mdi mdi-menu"></span>
-            </button>
-            <ul class="navbar-nav navbar-nav-right">
-                <li class="nav-item d-none d-lg-block full-screen-link">
-                    <a class="nav-link">
-                        <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="btn btn-light" href="#"><i class="mdi mdi-power"></i>Log Out</a>
-                </li>
-            </ul>
-            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-                data-toggle="offcanvas">
-                <span class="mdi mdi-menu"></span>
-            </button>
-        </div>
-    </nav>
-    <!--Navbar end-->
+</head>
 
-    <div class="page-body-wrapper">
-        <!--SideBar-->
-        <nav class="sidebar sidebar-offcanvas" id="sidebar">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="../dashboard/">
-                        <span class="menu-title">Comenzi</span>
-                        <i class="mdi mdi-home menu-icon"></i>
-                    </a>
-                </li>
-                <li class="nav-item  active">
-                    <a class="nav-link" href="../users/">
-                        <span class="menu-title">Utilizatori</span>
-                        <i class="mdi mdi-image-filter-frames menu-icon"></i>
-                    </a>
-                </li>
-            </ul>
+<body>
+    <div class="container-scroller">
+        <!--Navbar-->
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
+                <a class="navbar-brand brand-logo" href="index.html"><img
+                        src="../../../public/assets/images/logo-black.png" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item d-none d-lg-block full-screen-link">
+                        <a class="nav-link">
+                            <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="btn btn-light" href="#"><i class="mdi mdi-power"></i>Log Out</a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
         </nav>
-        <!--SideBar End-->
-    </div>
-      <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="../../../public/js/dashboard.js"></script>
-      <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!--Navbar end-->
+
+        <div class="page-body-wrapper">
+            <!--SideBar-->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../dashboard/">
+                            <span class="menu-title">Comenzi</span>
+                            <i class="mdi mdi-home menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item  active">
+                        <a class="nav-link" href="../users/">
+                            <span class="menu-title">Utilizatori</span>
+                            <i class="mdi mdi-image-filter-frames menu-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!--SideBar End-->
+        </div>
+        <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../../public/js/dashboard.js"></script>
+        <script src="../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
