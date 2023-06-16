@@ -1,7 +1,6 @@
 import {
-  getProductsFromLS,
-  updateLS,
   CART_PRODUCTS_KEY,
+  useLocalStorage,
 } from "../js/helpers/storage-helper.js";
 import ListItem from "./components/list-item.js";
 import CategoryCard from "./components/category-card.js";
@@ -139,18 +138,27 @@ $(`.owl-carousel`).owlCarousel({
 
 spinner.classList.add("d-none");
 
+const [getValue, setValue] = useLocalStorage(CART_PRODUCTS_KEY);
+
 const updateProductsCounter = (value) => {
   productsCounter.innerText = `${value}`;
 };
-const cartProducts = getProductsFromLS(CART_PRODUCTS_KEY) || [];
+const cartProducts = getValue() || [];
 updateProductsCounter(cartProducts.length);
 
 const addToCartBtn = document.querySelector("#add-to-cart-button");
 
 addToCartBtn.addEventListener("click", () => {
   const id = addToCartBtn.dataset.mdId;
-  cartProducts.unshift(id);
-  const uniqueProducts = new Set(cartProducts);
-  updateLS(CART_PRODUCTS_KEY, [...uniqueProducts]);
-  updateProductsCounter(uniqueProducts.size);
+
+  const product = products.find((product) => product.id === id);
+  const productIndex = cartProducts.findIndex((item) => item.id === product.id);
+  console.log(productIndex);
+
+  productIndex >= 0
+    ? (cartProducts[productIndex].quantity += 1)
+    : cartProducts.unshift({ ...product, quantity: 1 });
+
+  setValue(cartProducts);
+  updateProductsCounter(cartProducts.length);
 });

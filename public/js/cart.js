@@ -1,28 +1,17 @@
 import {
-  getProductsFromLS,
-  updateLS,
   CART_PRODUCTS_KEY,
+  useLocalStorage,
 } from "../js/helpers/storage-helper.js";
 import { Card } from "../../public/js/components/cart-card.js";
-
 
 const productsContainer = document.querySelector("#cart_items");
 const itemsCounter = document.querySelector("#items-count");
 const productsCounter = document.querySelector("#products-counter");
+const totalCost = document.querySelector("#total-price");
+const finalPrice = document.querySelector("#final-price");
 
-const getProducts = async () => {
-  let response = await fetch("../../data/produse.json");
-  let products = response.json();
-
-  return products;
-};
-
-const products = await getProducts();
-let productsFromLS = getProductsFromLS(CART_PRODUCTS_KEY);
-
-let cartProducts = products.filter((product) =>
-  productsFromLS.includes(product.id)
-);
+const [getProducts, setProducts] = useLocalStorage(CART_PRODUCTS_KEY);
+let cartProducts = getProducts();
 
 const updateProductsCounter = (value) => {
   productsCounter.textContent = `${cartProducts.length} produse`;
@@ -43,83 +32,67 @@ const render = (data) => {
   productsContainer.innerHTML = productHTML;
 };
 
+const renderSubtotal = () => {
+  let totalPrice = 0,
+    totalItems = 0;
+  cartProducts.forEach((product) => {
+    totalPrice += product.pret * product.quantity;
+    totalItems += product.quantity;
+  });
+
+  productsCounter.textContent = `${totalItems} produse`;
+  totalCost.textContent = `${totalPrice} mdl`;
+  finalPrice.textContent = `${totalPrice + 50} mdl`;
+};
+
 const removeProduct = (id) => {
   cartProducts = cartProducts.filter((product) => product.id != id);
-  productsFromLS = cartProducts.map((product) => product.id);
-  updateLS(CART_PRODUCTS_KEY, productsFromLS);
+  setProducts(cartProducts);
 };
 
 render(cartProducts);
+renderSubtotal();
 
 const closeBtns = document.querySelectorAll("#close-btn");
 
 closeBtns.forEach((button) => {
   button.addEventListener("click", (event) => {
-    let parent = event.target.parentNode.parentNode.parentNode;
+    let parent = event.target.parentNode.parentNode;
     let id = parent.dataset.id;
     removeProduct(id);
     productsContainer.removeChild(parent);
     updateItemsCounter(cartProducts.length);
     updateProductsCounter(cartProducts.length);
+    renderSubtotal();
   });
 });
 
-const totalPrice = document.querySelector("#total-price");
-const finalPrice = document.querySelector("#final-price");
 const stepUpButtons = document.querySelectorAll("#step-up");
 const stepDownButtons = document.querySelectorAll("#step-down");
-
-const SHIPPING_COST = 50;
-
-// ! Calculate total price of products
-const calculateTotal = () =>
-  cartProducts.reduce((total, currentValue) => total + currentValue.pret, 0);
-
-let totalSum = calculateTotal();
-
-const setTotalPrice = (value) => {
-  totalPrice.innerText = `${value} mdl`;
-};
-const setFinalPrice = (value) => {
-  finalPrice.innerText = `${value} mdl`;
-};
-
-setTotalPrice(totalSum);
-setFinalPrice(totalSum + SHIPPING_COST);
 
 stepUpButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     let parent = event.target.parentNode.parentNode.parentNode;
-    let priceElement = parent.querySelector("#product-price");
-    let price = parseInt(priceElement.textContent);
-    let quatityElement = parent.querySelector("#quantity-input");
-    let quatity = parseInt(quatityElement.value);
-    increasePrice(price);
-    setTotalPrice(totalSum);
-    setFinalPrice(totalSum + SHIPPING_COST);
+    const id = parent.dataset.id;
+    console.log(id);
+
+    const product = cartProducts.find((product) => product.id === id);
+    product.quantity++;
+    renderSubtotal();
   });
 });
 
 stepDownButtons.forEach((button) => {
   button.addEventListener("click", (event) => {
     let parent = event.target.parentNode.parentNode.parentNode;
-    let priceElement = parent.querySelector("#product-price");
-    let price = parseInt(priceElement.textContent);
-    let quatityElement = parent.querySelector("#quantity-input");
-    let quatity = parseInt(quatityElement.value);
-    decreasePrice(price);
-    setTotalPrice(totalSum);
-    setFinalPrice(totalSum + SHIPPING_COST);
+    const id = parent.dataset.id;
+    console.log(id);
+
+    const product = cartProducts.find((product) => product.id === id);
+    product.quantity > 1 && product.quantity--;
+    renderSubtotal();
   });
 });
-
-const increasePrice = (value) => {
-  totalSum += value;
-};
-
-const decreasePrice = (value) => {
-  totalSum -= value;
-};
 
 // Send Command to email
 const validateEmail = (email) => {

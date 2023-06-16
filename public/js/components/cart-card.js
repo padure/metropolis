@@ -1,4 +1,4 @@
-const Card = ({ id, nume, img, pret, categorie }) => {
+const Card = ({ id, nume, img, pret, categorie, quantity }) => {
   return `
     <div class="row mb-4 d-flex justify-content-between align-items-center border-bottom pb-3" data-id="${id}">
       <div class="col-md-2 col-lg-2 col-xl-2">
@@ -18,7 +18,7 @@ const Card = ({ id, nume, img, pret, categorie }) => {
             onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
             <i class="fas fa-minus"></i>
           </button>
-          <input min="1" name="quantity" id="quantity-input" value="1" type="number"
+          <input min="1" name="quantity" id="quantity-input" value="${quantity}" type="number"
             class="form-control form-control-sm" />
           <button class="btn btn-link px-2 text-white"
             id="step-up"
@@ -30,10 +30,9 @@ const Card = ({ id, nume, img, pret, categorie }) => {
           <h6 class="my-3" id="product-price">${pret} mdl</h6>
         </div>
         <div class="col-md-1 col-lg-2 text-end">
-          <a href="#!" class="text-muted fs-7" id="close-btn">
-          <!--<i class="fas fa-times text-white"></i>-->
+          <button class="btn btn-link text-muted fs-7" id="close-btn">
           Elimina
-          </a>
+          </button>
         </div>
     </div>
   </div>`;
