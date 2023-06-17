@@ -1,6 +1,6 @@
 import {
-  getProductsFromLS,
   CART_PRODUCTS_KEY,
+  useLocalStorage,
 } from "../js/helpers/storage-helper.js";
 import { backTop } from "../js/helpers/scroll.js";
 
@@ -17,9 +17,11 @@ backToTop.addEventListener("click", () => backTop());
 
 const productsCounter = document.querySelector("#items-count");
 
+const [getProducts] = useLocalStorage(CART_PRODUCTS_KEY);
+
 const updateProductsCounter = (value) => {
   productsCounter.innerText = `${value}`;
 };
 
-const cartProducts = getProductsFromLS(CART_PRODUCTS_KEY) || [];
+const cartProducts = getProducts() || [];
 updateProductsCounter(cartProducts.length);

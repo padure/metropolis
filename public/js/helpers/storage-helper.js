@@ -1,16 +1,14 @@
-const getProductsFromLS = (key) => {
-  return JSON.parse(localStorage.getItem(key));
-};
-
-const updateLS = (key, values) => {
-  localStorage.setItem(key, JSON.stringify(values));
-};
-
 const CART_PRODUCTS_KEY = "cart-products";
 
-
 const useLocalStorage = (key) => {
-  
-}
+  const getValue = () => {
+    return JSON.parse(localStorage.getItem(key));
+  };
+  const setValue = (value) => {
+    localStorage.setItem(key, JSON.stringify(value));
+  };
 
-export { getProductsFromLS, updateLS, CART_PRODUCTS_KEY };
+  return [getValue, setValue];
+};
+
+export { useLocalStorage, CART_PRODUCTS_KEY };

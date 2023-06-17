@@ -1,6 +1,6 @@
 import {
-  getProductsFromLS,
   CART_PRODUCTS_KEY,
+  useLocalStorage,
 } from "../js/helpers/storage-helper.js";
 
 const navbar = document.querySelector(".navbar");
@@ -58,8 +58,11 @@ $(document).ready(function () {
 const updateProductsCounter = (value) => {
   productsCounter.innerText = `${value}`;
 };
-const cartProducts = getProductsFromLS(CART_PRODUCTS_KEY) || [];
-console.log(cartProducts);
+
+const [getProducts] = useLocalStorage(CART_PRODUCTS_KEY);
+
+const cartProducts = getProducts() || [];
+
 updateProductsCounter(cartProducts.length);
 
 $(".owl-carousel").owlCarousel({
