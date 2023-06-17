@@ -179,6 +179,10 @@ body {
   background-position: center;
 }
 
+.vh-50 {
+  max-height: 50vh;
+}
+
 .wrapper {
   background-image: url("../../public/assets/images/index/hero-bg.jpg");
   background-size: cover;
